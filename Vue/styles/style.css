@@ -1,0 +1,68 @@
+body{
+    /*background-color: #f3f3cf;*/
+    background-image: url('../images/imsp0.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*animation: mymovingimage 20s infinite;*/
+}
+
+/*@keyframes mymovingimage {
+    0%   {background-image: url('../images/imsp0.png');}
+    25%  {background-image: url('../images/imsp1.png');}
+    50%  {background-image: url('../images/imsp2.png');}
+    75%  {background-image: url('../images/imsp3.png');}
+    100% {background-image: url('../images/imsp0.png');}
+}*/
+
+header{
+    height: 110px;
+}
+header img{
+    float: left;
+    width: 100px;
+}
+
+.all_blocks{
+    width: 70%;
+    margin-left: 20%;
+    height: 400px;
+}
+.second_block, .first_block{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.first_block-image img{
+    width: 285px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.second_block img{
+    width: 290px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.first_block{
+    margin-left: 2%;
+}
+.second_block{
+    margin-left: 23%;
+}
+
+.second_block-text, .first_block-text{
+    height: 190px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.second_block-text p, .first_block-text p{
+    padding-top: 50px;
+}
