@@ -1,0 +1,128 @@
+@import url("https://fonts.google.com/specimen/Open+Sans?query=open");
+@font-face { font-family: open; src: url('https://fonts.google.com/specimen/Open+Sans?query=open'); }
+
+body{
+    width: 100%;
+    /*border : 1px black solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    font-family: Open, sans-serif;
+}
+
+
+.block{
+    display: grid;
+    grid-template-columns:1fr 6fr;
+}
+
+
+/*.li{
+    display:inline-block;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+    margin-right: 25px;
+}*/
+
+
+.block_gauche{
+    text-align: center;
+    background-color: #0032FA;
+    color: white;
+    width : 100%;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-start;*/
+    height: 100vh;
+    padding-right: 15px; 
+}
+
+.liens_gauche{
+    margin-top: 25%;
+    margin-left: 15%;
+    font-size: 1.3em;
+    width: 80%;
+    height: 220px;
+    /*border: 1px black solid;*/
+}
+
+.user{
+    margin-top: 5%;
+}
+
+.user_img{
+    width: 60px;
+    height: 60px;
+    margin-left: 35%;
+    margin-bottom: 0%;
+}
+
+.user_mail{
+    margin-top: 2%;
+    font-size: 0.7em;
+}
+
+.liens_gauche p a{
+    color: black;
+    text-decoration: none;
+}
+
+.liens_gauche p{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.liens_gauche p a:hover{
+    color: white;
+}
+
+.logo
+{
+    align-self: flex-end;
+    padding-top: 95%; 
+}
+
+.block_droit_haut{ 
+    text-align: left;
+    color: black;
+    font-size: larger;
+    padding-top: 10px;
+    height: 12%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 1%;
+}
+
+.block_droit
+{
+    margin-left: 1.5%;
+   /* border: 1px black solid;*/
+}
+
+.welcome, .log_out{
+    display: inline-block;
+}
+
+.welcome{
+    margin-left: 15px;
+}
+
+.log_out{
+    width: 7%;
+    height: 4vh;
+    /*border: 1px black solid;*/
+    border-radius: 10px;
+    margin-left: 60%;
+    text-align: center;
+    padding-top: 0.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #5f7fff;
+}
+
+.log_out a{
+    font-size: 1.0em;
+    color: black;
+    text-decoration: none;
+}
