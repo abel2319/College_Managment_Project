@@ -1,0 +1,242 @@
+.label_placebirth {
+  font-family: "GILL SANS MT";
+  font-size: 18px;
+}
+.label_firstname,
+.label_lastname,
+.label_sex {
+  font-family: "GILL SANS MT";
+  font-size: 18px;
+}
+.Etape_1 {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  font-size: 20px;
+  height: 55px;
+  background-color: #063353;
+  color: white;
+}
+
+.label_nationality {
+  font-family: "GILL SANS MT";
+  font-size: 18px;
+}
+.triangle-etape_2 {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #063353;
+  border-bottom: 25px solid transparent;
+  position: absolute;
+  left: 584px;
+  top: 122px;
+}
+.triangle-etape_3 {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #063353;
+  border-bottom: 25px solid transparent;
+  position: absolute;
+  left: 749px;
+  top: 121px;
+}
+.text_etape_1 {
+  margin-bottom: 150px;
+}
+.Etape_2 {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 0px solid black;
+  font-size: 20px;
+  height: 55px;
+}
+.Etape_3_page_2 {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 0px solid black;
+  border-right: 2px solid black;
+  font-size: 20px;
+  height: 55px;
+}
+.Etape_3_page_3 {
+  font-size: 20px;
+  height: 55px;
+  background-color: #063353;
+  color: white;
+}
+.Etape_2_page_2 {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 0px solid black;
+  font-size: 20px;
+  height: 55px;
+  background-color: #063353;
+  color: white;
+}
+.Etape_3 {
+  border: 2px solid black;
+  font-size: 20px;
+  height: 55px;
+}
+
+.centre {
+  margin-top: 60px;
+  width: 800px;
+  margin-left: 80px;
+}
+.centre_page_3 {
+  margin-top: 40px;
+  width: 800px;
+  margin-left: 80px;
+}
+.group_etape {
+  border: 1px solid #a6b5f4;
+  width: 500px;
+  height: 400px;
+}
+.group_etape_page_3 {
+  border: 1px solid #a6b5f4;
+  width: 500px;
+  height: 450px;
+}
+#firstname {
+  width: 250px;
+}
+#course_of_study {
+  width: 270px;
+}
+.label_course_of_study {
+  margin-top: 2px;
+  font-family: "GILL SANS MT";
+  font-size: 18px;
+}
+.label_email,
+.label_contact,
+.label_address {
+  font-family: "GILL SANS MT";
+  font-size: 18px;
+}
+.next {
+  position: absolute;
+  right: 605px;
+  top: 450px;
+  background-color: #063353;
+  color: white;
+}
+.next_page_2 {
+  position: absolute;
+  right: 540px;
+  top: 460px;
+  background-color: #063353;
+  color: white;
+}
+.save {
+  position: absolute;
+  right: 540px;
+  top: 500px;
+  background-color: #063353;
+  color: white;
+}
+.link_next,
+.link_previous_page_2 {
+  text-decoration: none;
+  color: white;
+}
+.previous_page_3 {
+  position: absolute;
+  right: 670px;
+  top: 500px;
+  background-color: #063353;
+  color: white;
+}
+.previous {
+  position: absolute;
+  right: 670px;
+  top: 460px;
+  background-color: #063353;
+  color: white;
+}
+#datebirth {
+  width: 250px;
+}
+.label_datebirth {
+  margin-top: 2px;
+  font-family: "GILL SANS MT";
+  font-size: 18px;
+}
+.li {
+  display: inline-block;
+  padding-left: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: underline;
+  text-align: right;
+  margin-right: 25px;
+}
+.li1:hover {
+  color: white;
+}
+
+.block_gauche {
+  text-align: center;
+  background-color: #0435fc;
+  color: white;
+  width: 150px;
+  height: 570px;
+  padding-right: 15px;
+}
+.tt {
+  border: 1px solid black;
+  color: white;
+  background-color: white;
+  border-radius: 15px;
+  border-color: blue;
+  text-align: center;
+  border: large;
+}
+.tt2 {
+  text-align: right;
+  margin-left: 90px;
+}
+.block_droit_haut {
+  text-align: left;
+  margin-left: 0%;
+  color: black;
+  font-size: larger;
+  padding-top: 10px;
+  border: 1px black solid;
+  height: 10%;
+}
+.block_droit {
+  border: 1px black solid;
+}
+.li1 {
+  color: black;
+  list-style: none;
+  margin-right: 15px;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+body {
+  width: 1200px;
+  margin-left: 15px;
+}
+.header {
+  display: flex;
+  color: white;
+  background-color: white;
+  text-align: right;
+  margin-left: 100px;
+  border-radius: 15px;
+}
+.logo2 {
+  padding-top: 120px;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
