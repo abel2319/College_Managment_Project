@@ -17,7 +17,6 @@
   background-color: #063353;
   color: white;
 }
-
 .label_nationality {
   font-family: "GILL SANS MT";
   font-size: 18px;
@@ -29,8 +28,8 @@
   border-left: 50px solid #063353;
   border-bottom: 25px solid transparent;
   position: absolute;
-  left: 584px;
-  top: 122px;
+  left: 609px;
+  top: 82px;
 }
 .triangle-etape_3 {
   width: 0;
@@ -39,8 +38,8 @@
   border-left: 50px solid #063353;
   border-bottom: 25px solid transparent;
   position: absolute;
-  left: 749px;
-  top: 121px;
+  left: 774px;
+  top: 81px;
 }
 .text_etape_1 {
   margin-bottom: 150px;
@@ -82,7 +81,7 @@
 }
 
 .centre {
-  margin-top: 60px;
+  margin-top: 20px;
   width: 800px;
   margin-left: 80px;
 }
@@ -94,7 +93,8 @@
 .group_etape {
   border: 1px solid #a6b5f4;
   width: 500px;
-  height: 400px;
+  height: 480px;
+
 }
 .group_etape_page_3 {
   border: 1px solid #a6b5f4;
@@ -121,20 +121,20 @@
 .next {
   position: absolute;
   right: 605px;
-  top: 450px;
+  top: 505px;
   background-color: #063353;
   color: white;
 }
 .next_page_2 {
   position: absolute;
-  right: 540px;
+  right: 520px;
   top: 460px;
   background-color: #063353;
   color: white;
 }
 .save {
   position: absolute;
-  right: 540px;
+  right: 510px;
   top: 500px;
   background-color: #063353;
   color: white;
@@ -146,23 +146,26 @@
 }
 .previous_page_3 {
   position: absolute;
-  right: 670px;
+  right: 640px;
   top: 500px;
   background-color: #063353;
   color: white;
 }
 .previous {
   position: absolute;
-  right: 670px;
+  right: 640px;
   top: 460px;
   background-color: #063353;
   color: white;
 }
 #datebirth {
   width: 250px;
+  color: #afafad;
+ 
 }
+
 .label_datebirth {
-  margin-top: 2px;
+  margin-top: 5px;
   font-family: "GILL SANS MT";
   font-size: 18px;
 }
@@ -211,6 +214,7 @@
 }
 .block_droit {
   border: 1px black solid;
+  margin-left: 25px;
 }
 .li1 {
   color: black;

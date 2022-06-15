@@ -1,0 +1,43 @@
+.block{
+    background-color: #0435FC;
+}
+
+.menu{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.user_img{
+    text-align: center;
+}
+
+.user_img img, .logo img{
+    width: 25%;
+}
+
+.user_mail{
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.liens_gauche{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liens_gauche li{
+    margin: 1rem 0;
+    width: 65%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}

@@ -1,4 +1,5 @@
-<?php session_start() ?>
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +8,7 @@
       href="Bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="projet.css" />
+    <link rel="stylesheet" type="text/css" href="projet.css"/>
   </head>
   <body>
     <div class="block">
@@ -54,6 +55,8 @@
               <div class="col p-2"></div>
               <div class="col p-6" class="name">
                 <br />
+
+                <form action="inscrit.php" method="post">
                 <label for="firstname" class="label_firstname"
                   ><em>Nom :</em>
                 </label>
@@ -91,10 +94,22 @@
                   <option value="Masculin"></option>
                 </datalist>
 
-                <br /><br />
-                <button type="button" class="btn btn-small next" width="30px">
-                  <a href="Etape_2.html" class="link_next">Suivant</a>
+                <label for="picture" class="picture"
+                  ><em>Photo :</em>
+                </label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="picture"
+                  name="picture"
+                /><br />
+                <br />
+                <button type="submit" name ="btn1" class="btn btn-small next" width="30px">
+                  Suivant
                 </button>
+                
+              
+                </form>
               </div>
               <div class="col p-2"></div>
             </div>

@@ -1,4 +1,5 @@
-<?php session_start() ?>
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -54,6 +55,7 @@
               <div class="col p-2"></div>
               <div class="col p-6 inscription_page_2">
                 <br />
+                <form action="../../Modele/inscrit.php" method="post">
                 <label for="datebirth" class="label_datebirth"
                   ><em>Date de Naissance :</em>
                 </label>
@@ -92,17 +94,21 @@
                   class="btn btn-small previous"
                   width="30px"
                 >
-                  <a href="Etape_1.html" class="link_previous_page_2"
+                  <a href="inscript_1.php" class="link_previous_page_2"
                     >Précédent</a
                   >
                 </button>
+                
                 <button
-                  type="button"
+                  type="submit"
                   class="btn btn-small next_page_2"
                   width="30px"
+                  name ="btn2"
                 >
-                  <a href="Etape_3.html" class="link_next">Suivant</a>
+                Suivant
                 </button>
+              
+                </form>
               </div>
               <div class="col p-2"></div>
             </div>

@@ -1,4 +1,5 @@
-<?php session_start() ?>
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -52,6 +53,7 @@
             <div class="row">
               <div class="col p-2"></div>
               <div class="col p-6" class="name">
+              <form action="../../Modele/inscrit.php" method="post">
                 <label for="course_of_study" class="label_course_of_study"
                   ><em>Filière :</em>
                 </label>
@@ -107,13 +109,14 @@
                   class="btn btn-small previous_page_3"
                   width="30px"
                 >
-                  <a href="Etape_2.html" class="link_previous_page_2"
+                  <a href="inscript_2.php" class="link_previous_page_2"
                     >Précédent</a
                   >
                 </button>
-                <button type="button" class="btn btn-small save" width="30px">
+                <button type="submit" class="btn btn-small save" name = "btn3" width="30px">
                   Enregistrer
                 </button>
+                </form>
               </div>
               <div class="col p-2"></div>
             </div>
