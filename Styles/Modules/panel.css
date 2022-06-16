@@ -31,9 +31,14 @@
 
 .liens_gauche li{
     margin: 1rem 0;
-    width: 65%;
+    width: 45%;
     text-align: center;
     border-bottom: 1px solid black;
+}
+
+.liens_gauche li:hover{
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .logo{

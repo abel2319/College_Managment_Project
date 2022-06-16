@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Gestion Parcours Etudiant </title>
-<link rel = "stylesheet" type= "text/css" href = "projet1.css"/>
+
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
@@ -18,8 +18,8 @@
             </div>
             <ul class="liens_gauche"> 
                 <li class="accueil"><a href="#">Accueil</a></li> 
-                <li class="inscription"><a href="#">Inscription</a></li>
-                <li class="notes"><a href="#">Notes</a></li>
+                <li class="inscription"><a href="Inscription/inscrit.php">Inscription</a></li>
+                <li class="notes"><a href="Note/note.php">Notes</a></li>
                 <li class="bulletin"><a href="#">Bulletins</a></li>
             </ul>
             <div class="logo">

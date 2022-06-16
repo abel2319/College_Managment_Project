@@ -2,7 +2,10 @@
 <html>
 <head>
 <title>Gestion Parcours Etudiant </title>
-<link rel = "stylesheet" type= "text/css" href = "projet.css"/>
+
+<link rel = "stylesheet" type= "text/css" href = "../../Styles/Bases/reset.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../../Styles/Bases/base.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../../Styles/Modules/note.css"/>
 </head>
 <body>
 

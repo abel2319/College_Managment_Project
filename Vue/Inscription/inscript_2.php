@@ -1,14 +1,12 @@
-<?php session_start();
-?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Gestion Parcours Etudiant</title>
     <link
-      href="Bootstrap/css/bootstrap.min.css"
+      href="../../Styles/Modules/Bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="projet.css" />
+    <link rel="stylesheet" type="text/css" href="../../Styles/Modules/inscrit_i.css" />
   </head>
   <body>
     <div class="block">
@@ -55,7 +53,7 @@
               <div class="col p-2"></div>
               <div class="col p-6 inscription_page_2">
                 <br />
-                <form action="../../Modele/inscrit.php" method="post">
+                <form action="../../Controlleur/Inscription/inscription2.php" method="post">
                 <label for="datebirth" class="label_datebirth"
                   ><em>Date de Naissance :</em>
                 </label>
@@ -65,6 +63,7 @@
                   id="datebirth"
                   placeholder="Date de naissance"
                   name="datebirth"
+                  required
                 /><br />
 
                 <label for="placebirth" class="label_placebirth"
@@ -76,6 +75,7 @@
                   id="placebirth"
                   placeholder="Lieu de naissance"
                   name="placebirth"
+                  required
                 /><br />
 
                 <label for="nationality" class="label_nationality"
@@ -87,6 +87,7 @@
                   id="nationality"
                   placeholder="Nationalité"
                   name="nationality"
+                  required
                 /><br />
                 <br /><br />
                 <button

@@ -1,14 +1,12 @@
-<?php session_start();
-?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Gestion Parcours Etudiant</title>
     <link
-      href="Bootstrap/css/bootstrap.min.css"
+      href="../../Styles/Modules/Bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="projet.css"/>
+    <link rel="stylesheet" type="text/css" href="../../Styles/Modules/inscrit_i.css"/>
   </head>
   <body>
     <div class="block">
@@ -56,7 +54,7 @@
               <div class="col p-6" class="name">
                 <br />
 
-                <form action="inscrit.php" method="post">
+                <form action="../../Controlleur/Inscription/inscription1.php" method="post">
                 <label for="firstname" class="label_firstname"
                   ><em>Nom :</em>
                 </label>
@@ -67,6 +65,7 @@
                   placeholder="ASSOGBA"
                   name="firstname"
                   width="50px"
+                  required
                 /><br />
 
                 <label for="lastname" class="label_lastname"
@@ -78,6 +77,7 @@
                   id="lastname"
                   placeholder="Pierre"
                   name="lastname"
+                  required
                 /><br />
 
                 <label for="sex" class="label_sex"><em>Sexe :</em> </label>
@@ -88,6 +88,7 @@
                   id="sex"
                   placeholder="Masculin ou Féminin"
                   name="sex"
+                  required
                 /><br />
                 <datalist id="kind">
                   <option value="Féminin"></option>
@@ -102,6 +103,7 @@
                   class="form-control"
                   id="picture"
                   name="picture"
+                  required
                 /><br />
                 <br />
                 <button type="submit" name ="btn1" class="btn btn-small next" width="30px">

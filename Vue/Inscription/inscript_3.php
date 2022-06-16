@@ -1,14 +1,12 @@
-<?php session_start();
-?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Gestion Parcours Etudiant</title>
     <link
-      href="Bootstrap/css/bootstrap.min.css"
+      href="../../Styles/Modules/Bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="projet.css" />
+    <link rel="stylesheet" type="text/css" href="../../Styles/Modules/inscrit_i.css" />
   </head>
   <body>
     <div class="block">
@@ -53,7 +51,7 @@
             <div class="row">
               <div class="col p-2"></div>
               <div class="col p-6" class="name">
-              <form action="../../Modele/inscrit.php" method="post">
+              <form action="../../Controlleur/Inscription/inscription3.php" method="post">
                 <label for="course_of_study" class="label_course_of_study"
                   ><em>Filière :</em>
                 </label>
@@ -64,6 +62,7 @@
                   id="course_of_study"
                   placeholder="TIC"
                   name="course_of_study"
+                  required
                 /><br />
                 <datalist id="course_study">
                   <option value="Data Science"></option>
@@ -75,11 +74,12 @@
 
                 <label for="email" class="label_email"><em>Email :</em> </label>
                 <input
-                  type="email"
+                  type="texte"
                   class="form-control"
                   id="email"
                   placeholder="assogba_pierre01@gmail.com"
                   name="email"
+                  required
                 /><br />
 
                 <label for="contact" class="label_contact"
@@ -91,6 +91,7 @@
                   id="contact"
                   placeholder="Contact"
                   name="contact"
+                  required
                 /><br />
 
                 <label for="address" class="label_address"
@@ -102,6 +103,7 @@
                   id="address"
                   placeholder="RUE 1547"
                   name="address"
+                  required
                 /><br />
                 <br /><br />
                 <button
