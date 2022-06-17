@@ -13,7 +13,7 @@ USE PROJET_WEB;
 CREATE TABLE Filiere
 (
 	id INT PRIMARY KEY,
-  nom VARCHAR(30) NOT NULL,
+    nom VARCHAR(60) NOT NULL,
 	responsable_filiere VARCHAR(90) NOT NULL
 );
 
@@ -35,9 +35,11 @@ CREATE TABLE Etudiant
 	matricule INT PRIMARY KEY,
 	nom VARCHAR(30) NOT NULL,
 	prenom VARCHAR(60) NOT NULL,
+	nom_filiere VARCHAR (60) REFERENCES Filiere(nom),
 	date_naissance DATE NOT NULL,
 	lieu_naissance VARCHAR(30) NOT NULL,
 	nationalite VARCHAR(30) NOT NULL,
+	photo VARCHAR(60) NOT NULL,
 	email VARCHAR(30),
 	genre VARCHAR(30) NOT NULL,
 	contact VARCHAR(30) NOT NULL,
@@ -73,3 +75,5 @@ CREATE TABLE Etudiant_has_note_in_Matiere
 	id_Matiere INT REFERENCES Matiere(id),
 	PRIMARY KEY (id_Etudiant, id_Matiere)
 );
+
+insert into Etudiant VALUES (1, 'nom0', 'prenom0', 'filiere0', 'dateNaiss0', 'lieuNaiss', 'na', 'ph', 'e', 'g', 'c', 'a');

@@ -16,8 +16,8 @@ if(isset($submit3)){
     $na = $_SESSION['na'];
     $ph = $_SESSION['ph']; 
     $g = $_SESSION['s'];
-
     $etu = new Etudiant();
+   // $etu->getInfoMatricule();
     $etu->inscritEtudiant($n, $p, $f, $dn, $ln, $na, $ph, $e, $g, $c, $a);
     
     
