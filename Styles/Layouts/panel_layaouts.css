@@ -1,5 +1,24 @@
+body{
+  display: grid;
+  grid-template-columns:1fr 6fr;
+}
+
 #block {
   width: 18vw;
   height: 100vh;
-  padding: 1rem;
+  padding: 1rem;  
+}
+
+#header_block{
+  width: 100vw;
+  height: 13vh;
+  margin-right: 0%;
+  margin-left: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+
+#center_block{
+  border: 1px solid black;
 }

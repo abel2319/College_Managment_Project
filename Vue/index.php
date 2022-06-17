@@ -27,12 +27,5 @@
             </div>
         </nav> 
     </div>
-    <div class="header_block" id="header_block">
-        <p class="header_text">Welcome to your Dashboard</p>
-        <div class="log_btn"><button>log out</button></div>
-    </div>
-    <div class="center_block" id="center_block">
-
-    </div>
   </body>
 </html>
