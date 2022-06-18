@@ -3,10 +3,10 @@
 <head>
 <title>Gestion Parcours Etudiant </title>
 
-<link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
 
 </head>
 <body>
@@ -32,7 +32,7 @@
         <div class="log_btn"><button>log out</button></div>
     </div>
     <div class="center_block" id="center_block">
-
+        <p>just to see all</p>
     </div>
   </body>
 </html>

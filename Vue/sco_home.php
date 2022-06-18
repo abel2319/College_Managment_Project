@@ -9,12 +9,13 @@
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/sco_home.css"/>
 </head>
 <body>
     <?php
         include_once('panel.php')
     ?>
-    <div class="acceuil">
+    <div class="center_block" id="center_block">
         <h1 class="aah">Globals informations</h1>
         <div class="centre">
             <div class="dansCentre">              
@@ -30,7 +31,7 @@
             </div>      
         </div>
         <div class="container">
-                <a href="#"><div class="tab"><img src="images/student_report.png" alt="" width="250px" class="bul"><br><br><br><br><br><br><br><br><h1>Bulletins</h1> </div></a>
+                <a href="#"><div class="tab"><img src="student_report.png" alt="" width="250px" class="bul"><br><br><br><br><br><br><br><br><h1>Bulletins</h1> </div></a>
                 <a href="#"><div class="tab"><img src="images/all-2.jpg" alt="" width="250px" class="bul"><br><h1>Notes</h1> </div></a>
                 <a href="#"><div class="tab"><img src="images/all-1.jpg" alt="" width="250px" class="bul"><br> <br><h1>Diplomes</h1></div></a>
         </div>
