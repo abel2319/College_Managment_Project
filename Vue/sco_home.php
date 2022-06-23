@@ -18,22 +18,22 @@
     <div class="center_block" id="center_block">
         <h1 class="aah">Globals informations</h1>
         <div class="centre">
-            <div class="dansCentre">              
-                Total Students <br><br>
-                <input type="text" name="totalStudent" id="totalStudent"/> 
+            <div class="dansCentre">
+                <span class="stuclas">Total Students </span>
+                <span name="totalStudent" id="totalStudent" class="stuclas">562</span>
             </div>
             <div class="dansCentreLogo">
-                <img src="students.png" alt="" width="100px" class="log3">
+                <img src="students.png" alt="" class="log3" />
             </div>
             <div class="dansCentre">
-                Total classes <br><br>
-                <input type="text" name="classe" id="classe" class="classes" />
-            </div>      
+                <span class="stuclas">Total classes </span>
+                <span name="classe" id="classe" class="stuclas">16</span>
+            </div>
         </div>
         <div class="container">
-                <a href="#"><div class="tab"><img src="student_report.png" alt="" width="250px" class="bul"><br><br><br><br><br><br><br><br><h1>Bulletins</h1> </div></a>
-                <a href="#"><div class="tab"><img src="images/all-2.jpg" alt="" width="250px" class="bul"><br><h1>Notes</h1> </div></a>
-                <a href="#"><div class="tab"><img src="images/all-1.jpg" alt="" width="250px" class="bul"><br> <br><h1>Diplomes</h1></div></a>
+                <div class="tab"><a href="#"><img src="images/bulletin.jpg" alt="" class="bul1"><h1>Bulletins</h1></a></div>
+                <div class="tab"><a href="#"><img src="images/all-2.jpg" alt="" class="bul2"><h1>Notes</h1></a></div>
+                <div class="tab"><a href="#"><img src="images/all-1.jpg" alt="" class="bul2"><h1>Diplomes</h1></a></div>
         </div>
     </div>
 </body>
