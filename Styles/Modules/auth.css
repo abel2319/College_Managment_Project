@@ -1,0 +1,58 @@
+#page_body
+{
+  background-image: url(../../Vue/images/auth_background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#formulaire
+{
+  display: block;
+  padding-top: 20%;
+  padding-left: 5%;
+}
+
+.login_field
+{
+  display: block;
+  height: 32px;
+  width: 28%;
+  padding-left: 1%;
+  margin-bottom: 20px;
+  outline: groove 3px red;
+  font-size: 1em;
+}
+
+#login_sub
+{
+  display: block;
+  height: 32px;
+  width: 10%;
+  margin-bottom: 20px;
+  background-color: gray;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1em;
+  color: navy;
+}
+
+#login_sub:hover
+{
+  background-color: silver;
+}
+
+#school_name
+{
+  display: block;
+  width: 20%;
+  margin-left: 60%;
+  margin-top: 11%;
+  margin-bottom: 1%;
+  color: aqua;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 2.8em;
+}
