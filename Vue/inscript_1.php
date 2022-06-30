@@ -23,7 +23,7 @@
            
               <div class="col display-6 text_inscript_1_step-1">
                 <b>Etape 1</b>
-              </div>
+         </div>
               <div class="col  display-6 text_inscript_1_step-2">
                 <b>Etape 2</b>
               </div>

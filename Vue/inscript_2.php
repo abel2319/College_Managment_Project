@@ -31,7 +31,7 @@
                       <b>Etape 3</b>
                     </div>
              
-            </div>
+           </div>
 
             <div class="row datebirth">
               <div class="col"></div>
