@@ -7,16 +7,16 @@
 -- 7) Enfin, admirez le spectacle !
 
 
---DB CREATION
+-- DB CREATION
 CREATE DATABASE PROJET_WEB;
 
 USE PROJET_WEB;
 
---EMPLOYEES INFORMARIONS
+-- EMPLOYEES INFORMARIONS
 
 CREATE TABLE ChefScolarite
 (
-	id INT PRIMARY KEY,
+	id INT ,
 	nom VARCHAR(30) NOT NULL,
 	prenom VARCHAR(60) NOT NULL,
 	date_naissance DATE NOT NULL,
@@ -48,13 +48,13 @@ CREATE TABLE Directeur
 	PRIMARY KEY (id, id_Etudiant)
 );
 
---COURSES
+-- COURSES
 
 CREATE TABLE Matiere
 (
 	id INT PRIMARY KEY,
 	nom VARCHAR(30) NOT NULL,
-	credit SMALLINT NOT NULL CHECK(credit > 0),
+	credit SMALLINT NOT NULL CHECK(credit > 0)
 	
 );
 
@@ -66,7 +66,7 @@ CREATE TABLE UE
 	PRIMARY KEY (id, id_Matiere)
 );
 
---CLASSES
+-- CLASSES
 
 CREATE TABLE Filiere
 (
@@ -78,7 +78,7 @@ CREATE TABLE Filiere
 	PRIMARY KEY (id, id_UE, id_Etudiant)
 );
 
---STUDENTS
+-- STUDENTS
 
 CREATE TABLE Etudiant
 (
@@ -92,11 +92,11 @@ CREATE TABLE Etudiant
 	genre VARCHAR(30) NOT NULL,
 	contact VARCHAR(30) NOT NULL,
 	adresse VARCHAR(30) NOT NULL,
-	photo VARCHAR(60) NOT NULL,
+	photo VARCHAR(60) NOT NULL
 
 );
 
---RELATION BETWEEN TABLES
+-- RELATION BETWEEN TABLES
 
 CREATE TABLE EtudiantHasNoteInMatiere
 (
