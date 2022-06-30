@@ -13,6 +13,7 @@ CREATE DATABASE PROJET_WEB;
 USE PROJET_WEB;
 
 --EMPLOYEES INFORMARIONS
+
 CREATE TABLE ChefScolarite
 (
 	id INT PRIMARY KEY,
@@ -21,7 +22,7 @@ CREATE TABLE ChefScolarite
 	date_naissance DATE NOT NULL,
 	lieu_naissance VARCHAR(30) NOT NULL,
 	nationalite VARCHAR(30) NOT NULL,
-	email VARCHAR(30),
+	email VARCHAR(30) NOT NULL,
 	genre VARCHAR(30) NOT NULL,
 	contact VARCHAR(30) NOT NULL,
 	adresse VARCHAR(30) NOT NULL,
@@ -32,7 +33,7 @@ CREATE TABLE ChefScolarite
 
 CREATE TABLE Directeur
 (
-	id INT PRIMARY KEY,
+	id INT NOT NULL,
 	nom VARCHAR(30) NOT NULL,
 	prenom VARCHAR(60) NOT NULL,
 	date_naissance DATE NOT NULL,
@@ -47,13 +48,14 @@ CREATE TABLE Directeur
 	PRIMARY KEY (id, id_Etudiant)
 );
 
-
 --COURSES
+
 CREATE TABLE Matiere
 (
-	id INT NOT NULL,
+	id INT PRIMARY KEY,
 	nom VARCHAR(30) NOT NULL,
-	credit SMALLINT NOT NULL CHECK(credit > 0)
+	credit SMALLINT NOT NULL CHECK(credit > 0),
+	
 );
 
 CREATE TABLE UE
@@ -64,18 +66,20 @@ CREATE TABLE UE
 	PRIMARY KEY (id, id_Matiere)
 );
 
-
 --CLASSES
+
 CREATE TABLE Filiere
 (
 	id INT,
-    nom VARCHAR(30) NOT NULL,
+   	nom VARCHAR(30) NOT NULL,
 	responsable_filiere VARCHAR(90) NOT NULL,
 	id_UE INT REFERENCES UE(id),
-	PRIMARY KEY (id, id_UE)
+	id_Etudiant INT REFERENCES Etudiant(matricule),
+	PRIMARY KEY (id, id_UE, id_Etudiant)
 );
 
 --STUDENTS
+
 CREATE TABLE Etudiant
 (
 	matricule INT PRIMARY KEY,
@@ -84,16 +88,17 @@ CREATE TABLE Etudiant
 	date_naissance DATE NOT NULL,
 	lieu_naissance VARCHAR(30) NOT NULL,
 	nationalite VARCHAR(30) NOT NULL,
-	email VARCHAR(30) NOT NULL,
+	email VARCHAR(30),
 	genre VARCHAR(30) NOT NULL,
 	contact VARCHAR(30) NOT NULL,
 	adresse VARCHAR(30) NOT NULL,
 	photo VARCHAR(60) NOT NULL,
-	id_Filiere INT REFERENCES Filiere(id)
+
 );
 
 --RELATION BETWEEN TABLES
-CREATE TABLE Etudiant_has_note_in_Matiere
+
+CREATE TABLE EtudiantHasNoteInMatiere
 (
 	note REAL CHECK (note >= 0. AND note <= 20.),
 	note_ratrappage REAL CHECK (note_ratrappage >= 0. AND note_ratrappage <= 20.),
