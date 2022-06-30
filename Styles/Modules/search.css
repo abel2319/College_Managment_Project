@@ -1,0 +1,55 @@
+.centre {
+  text-align: center;
+  margin-top: 90px;
+}
+.id_label {
+  color: white;
+  background-color: #063353;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 22px;
+}
+.id_input {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 20px;
+}
+.firstname_label {
+  color: white;
+  background-color: #063353;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 22px;
+}
+.firstname_input {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 20px;
+}
+.lastname_label {
+  color: white;
+  background-color: #063353;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 22px;
+}
+.lastname_input {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 20px;
+}
+.search_button {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #063353;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -1,246 +1,121 @@
-.label_placebirth {
-  font-family: "GILL SANS MT";
-  font-size: 18px;
-}
-.label_firstname,
-.label_lastname,
-.label_sex {
-  font-family: "GILL SANS MT";
-  font-size: 18px;
-}
-.Etape_1 {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  font-size: 20px;
-  height: 55px;
+.text_inscript_1_step-1 {
   background-color: #063353;
+  text-align: center;
   color: white;
+  padding: 15px;
 }
-.label_nationality {
-  font-family: "GILL SANS MT";
-  font-size: 18px;
-}
-.triangle-etape_2 {
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 50px solid #063353;
-  border-bottom: 25px solid transparent;
-  position: absolute;
-  left: 609px;
-  top: 82px;
-}
-.triangle-etape_3 {
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 50px solid #063353;
-  border-bottom: 25px solid transparent;
-  position: absolute;
-  left: 774px;
-  top: 81px;
-}
-.text_etape_1 {
-  margin-bottom: 150px;
-}
-.Etape_2 {
+.text_inscript_1_step-2 {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   border-left: 0px solid black;
-  font-size: 20px;
-  height: 55px;
+  text-align: center;
 }
-.Etape_3_page_2 {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  border-left: 0px solid black;
-  border-right: 2px solid black;
-  font-size: 20px;
-  height: 55px;
-}
-.Etape_3_page_3 {
-  font-size: 20px;
-  height: 55px;
-  background-color: #063353;
-  color: white;
-}
-.Etape_2_page_2 {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  border-left: 0px solid black;
-  font-size: 20px;
-  height: 55px;
-  background-color: #063353;
-  color: white;
-}
-.Etape_3 {
+.text_inscript_1_step-3 {
   border: 2px solid black;
-  font-size: 20px;
-  height: 55px;
+  text-align: center;
 }
-
-.centre {
-  margin-top: 20px;
-  width: 800px;
-  margin-left: 80px;
-}
-.centre_page_3 {
-  margin-top: 40px;
-  width: 800px;
-  margin-left: 80px;
-}
-.group_etape {
-  border: 1px solid #a6b5f4;
-  width: 500px;
-  height: 480px;
-
-}
-.group_etape_page_3 {
-  border: 1px solid #a6b5f4;
-  width: 500px;
-  height: 450px;
-}
-#firstname {
-  width: 250px;
-}
-#course_of_study {
-  width: 270px;
-}
-.label_course_of_study {
-  margin-top: 2px;
-  font-family: "GILL SANS MT";
-  font-size: 18px;
-}
-.label_email,
-.label_contact,
-.label_address {
-  font-family: "GILL SANS MT";
-  font-size: 18px;
-}
-.next {
-  position: absolute;
-  right: 605px;
-  top: 505px;
+.text_inscript_2_step-1 {
   background-color: #063353;
+  text-align: center;
   color: white;
+  padding: 15px;
 }
-.next_page_2 {
-  position: absolute;
-  right: 520px;
-  top: 460px;
+.text_inscript_2_step-2 {
   background-color: #063353;
+  text-align: center;
   color: white;
+  padding: 15px;
 }
-.save {
-  position: absolute;
-  right: 510px;
-  top: 500px;
+.text_inscript_2_step-3 {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  text-align: center;
+}
+.text_inscript_3_step-1 {
   background-color: #063353;
+  text-align: center;
   color: white;
+  padding: 15px;
 }
-.link_next,
-.link_previous_page_2 {
-  text-decoration: none;
-  color: white;
-}
-.previous_page_3 {
-  position: absolute;
-  right: 640px;
-  top: 500px;
+.text_inscript_3_step-2 {
   background-color: #063353;
+  text-align: center;
   color: white;
+  padding: 15px;
 }
-.previous {
-  position: absolute;
-  right: 640px;
-  top: 460px;
+.text_inscript_3_step-3 {
   background-color: #063353;
+  text-align: center;
   color: white;
+  padding: 15px;
 }
-#datebirth {
-  width: 250px;
-  color: #afafad;
- 
-}
-
-.label_datebirth {
-  margin-top: 5px;
-  font-family: "GILL SANS MT";
-  font-size: 18px;
-}
-.li {
-  display: inline-block;
-  padding-left: 2px;
-  padding-top: 15px;
+.group_of_step-inscript_1 {
+  margin-left: 0px;
+  margin-top: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  border-bottom: 1px solid #a6b5f4;
+  border-right: 1px solid #a6b5f4;
+  border-left: 1px solid #a6b5f4;
   padding-bottom: 15px;
-  text-decoration: underline;
-  text-align: right;
-  margin-right: 25px;
 }
-.li1:hover {
-  color: white;
+.group_of_step-inscript_2 {
+  margin-left: 0px;
+  margin-top: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  border-bottom: 1px solid #a6b5f4;
+  border-right: 1px solid #a6b5f4;
+  border-left: 1px solid #a6b5f4;
+  padding-bottom: 25px;
 }
-
-.block_gauche {
+.group_of_step-inscript_3 {
+  margin-left: 0px;
+  margin-top: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  border-bottom: 1px solid #a6b5f4;
+  border-right: 1px solid #a6b5f4;
+  border-left: 1px solid #a6b5f4;
+  padding-bottom: 25px;
+}
+.firstname,
+.lastname,
+.king,
+.picture,
+.nationality,
+.placebirth,
+.datebirth,
+.course_study,
+.email,
+.contact,
+.address {
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.button-next {
   text-align: center;
-  background-color: #0435fc;
-  color: white;
-  width: 150px;
-  height: 570px;
-  padding-right: 15px;
 }
-.tt {
-  border: 1px solid black;
-  color: white;
-  background-color: white;
-  border-radius: 15px;
-  border-color: blue;
+.inscript_1 {
+  margin-top: 75px;
+  padding-bottom: 15px;
+}
+.inscript_2 {
+  margin-top: 75px;
+  padding-bottom: 15px;
+}
+.inscript_3 {
+  margin-top: 55px;
+  padding-bottom: 15px;
+}
+.btn-next {
+  background-color: #063353;
+}
+.next_previous-inscript_2,
+.save_previous-inscript_3 {
   text-align: center;
-  border: large;
 }
-.tt2 {
-  text-align: right;
-  margin-left: 90px;
-}
-.block_droit_haut {
-  text-align: left;
-  margin-left: 0%;
-  color: black;
-  font-size: larger;
-  padding-top: 10px;
-  border: 1px black solid;
-  height: 10%;
-}
-.block_droit {
-  border: 1px black solid;
-  margin-left: 25px;
-}
-.li1 {
-  color: black;
-  list-style: none;
-  margin-right: 15px;
-  margin-top: 15px;
-  text-decoration: underline;
-}
-
-body {
-  width: 1200px;
-  margin-left: 15px;
-}
-.header {
-  display: flex;
-  color: white;
-  background-color: white;
-  text-align: right;
-  margin-left: 100px;
-  border-radius: 15px;
-}
-.logo2 {
-  padding-top: 120px;
-}
-
-.block {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
+.btn {
+  background-color: #063353;
 }
