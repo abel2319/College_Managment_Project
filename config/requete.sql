@@ -54,28 +54,26 @@ CREATE TABLE Matiere
 (
 	id INT PRIMARY KEY,
 	nom VARCHAR(30) NOT NULL,
-	credit SMALLINT NOT NULL CHECK(credit > 0)
+	credit SMALLINT NOT NULL CHECK(credit > 0),
+	id_UE INT REFERENCES UE(id)
 	
 );
 
 CREATE TABLE UE
 (
-	id INT,
+	id INT PRIMARY KEY,
 	nom VARCHAR(30) NOT NULL,
-	id_Matiere INT REFERENCES Matiere(id),
-	PRIMARY KEY (id, id_Matiere)
+	id_Filiere INT REFERENCES Filiere(id)
 );
 
 -- CLASSES
 
 CREATE TABLE Filiere
 (
-	id INT,
+	id INT PRIMARY KEY,
    	nom VARCHAR(30) NOT NULL,
 	responsable_filiere VARCHAR(90) NOT NULL,
-	id_UE INT REFERENCES UE(id),
-	id_Etudiant INT REFERENCES Etudiant(matricule),
-	PRIMARY KEY (id, id_UE, id_Etudiant)
+
 );
 
 -- STUDENTS
@@ -92,7 +90,8 @@ CREATE TABLE Etudiant
 	genre VARCHAR(30) NOT NULL,
 	contact VARCHAR(30) NOT NULL,
 	adresse VARCHAR(30) NOT NULL,
-	photo VARCHAR(60) NOT NULL
+	photo VARCHAR(60) NOT NULL,
+	id_Filiere REFERENCES Filiere (id)
 
 );
 
