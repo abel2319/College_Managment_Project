@@ -31,14 +31,14 @@
                     <br><br>
                     <div class="row">
                         <div class="col"></div>
-                        <div class="col text-center edit_student"><a href="#">Modifier inscription Etudiant</a></div>
+                        <div class="col text-center edit_student"><a href="search.php">Modifier inscription Etudiant</a></div>
                         <div class="col"></div>
                     </div> 
 
                     <br><br>
                     <div class="row">
                         <div class="col"></div>
-                        <div class="col text-center delete_student"><a href="#">Supprimer inscription Etudiant</a></div>
+                        <div class="col text-center delete_student"><a href="search.php">Supprimer inscription Etudiant</a></div>
                         <div class="col"></div>
                     </div> 
             </div>

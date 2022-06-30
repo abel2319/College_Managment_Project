@@ -1,0 +1,27 @@
+.label_firstname,
+.label_datebirth,
+.label_course_of_study {
+  margin-top: 30px;
+}
+.all_button {
+  margin-top: 50px;
+  text-align: right;
+  margin-right: 55px;
+}
+.button_edit {
+  margin-right: 15px;
+}
+.label_firstname,
+.label_lastname,
+.label_king,
+.label_picture,
+.label_nationality,
+.label_placebirth,
+.label_datebirth,
+.label_course_study,
+.label_email,
+.label_contact,
+.label_address {
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
