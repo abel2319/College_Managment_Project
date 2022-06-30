@@ -5,9 +5,8 @@ $user = "root";
 $pwd = "";
 $db = "PROJET_WEB";
 
-/*function crypter()
+function crypter($ch)
 {
-  $ch = 'jesuisabel';
   for($i=0; $i<strlen($ch); $i++){
     if('A' <= $ch[$i] AND $ch[$i] <= 'Z'){
       $ch[$i] = chr(ord('A')+(ord($ch[$i])-ord('A')+3)%26);
@@ -17,7 +16,9 @@ $db = "PROJET_WEB";
     }
   }
   return $ch;
-}*/
+}
+
+echo crypter('jesuisabel');
 
 $conn = mysqli_connect($server, $user, $pwd, $db);
 if($conn AND isset($_POST['user_name']) AND isset($_POST['user_pwd'])){
@@ -36,7 +37,7 @@ if($conn AND isset($_POST['user_name']) AND isset($_POST['user_pwd'])){
     $result = mysqli_query($conn, $sql);
     $nrow = mysqli_num_rows($result);
     if($nrow == 1){
-      $url = 'sco_home.php';
+      $url = 'Vue/sco_home.php';
       header('Location: '.$url);
       exit();
     }
@@ -44,7 +45,7 @@ if($conn AND isset($_POST['user_name']) AND isset($_POST['user_pwd'])){
   mysqli_close($conn);
 }
 
-$url = 'auth.php';
+$url = '../index.php';
 header('Location: '. $url);
 
 

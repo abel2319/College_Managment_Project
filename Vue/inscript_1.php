@@ -6,36 +6,17 @@
       href="../../Styles/Modules/Bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="../../Styles/Modules/inscrit_i.css"/>
+    <link rel="stylesheet" type="text/css" href="../Styles/Modules/inscrit_i.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
   </head>
   <body>
-    <div class="block">
-      <div class="block_gauche">
-        <nav class="menu">
-          <ul>
-            <br />
-            <li class="li1"><a href="#"> </a> Accueil</li>
-            <br />
-            <li class="li1"><a href="#"> </a> Inscription</li>
-            <br />
-            <li class="li1"><a href="#"></a> Notes</li>
-            <br />
-            <li class="li1"><a href="#"></a> Bulletins</li>
-            <br />
-            <br />
-            <br />
-            <br />
-            <img src="logo.jpeg" width="60px" class="logo2" />
-          </ul>
-        </nav>
-      </div>
-      <div class="block_droit">
-        <div class="block_droit_haut">
-          Welcome to your Dashboard
-          <label for="log out"> </label>
-          <input type="Button" value="log out" />
-        </div>
-        <div class="centre">
+  <?php
+        include_once('panel.php')
+    ?>
+    <div class="center_block" id="center_block"> 
           <div class="container-fluid mt-3 group_etape">
             <div class="row">
               <div class="col p-3 text-center display-6 Etape_1">

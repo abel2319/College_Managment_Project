@@ -2,11 +2,11 @@
 <html>
 <head>
 <title>Gestion Parcours Etudiant </title>
-<link rel = "stylesheet" type= "text/css" href = "../../Styles/Layouts/panel_layaouts.css"/>
-<link rel = "stylesheet" type= "text/css" href = "../../Styles/Bases/reset.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
-<link rel = "stylesheet" type= "text/css" href = "../../Styles/Bases/base.css"/>
-<link rel = "stylesheet" type= "text/css" href = "../../Styles/Modules/modSupp.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/modSupp.css"/>
 </head>
 <body>
 
