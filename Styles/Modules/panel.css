@@ -32,15 +32,17 @@
 
 .liens_gauche li{
     margin: 1rem 0;
-    width: 50%;
+    width: 60%;
     text-align: center;
     border-bottom: 1px solid black;
 }
 
-/*.liens_gauche li:hover{
+.liens_gauche li:hover{
     color: white;
-    border-bottom: 1px solid white;
-}*/
+    border-bottom: 2px solid white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
 .logo{
     text-align: center;
@@ -48,29 +50,12 @@
     bottom: 0;
 }
 
-/*.header_text, .log_btn{
-    display: inline-block;
-}*/
-
 .header_text{
     margin-top: 3%;
     font-size: 1.5em;
     margin-left: 2%;
 }
 
-/*.log_btn{
-    padding-top: 2%;
-    padding-right: 1%;
-    padding-left: 10%;
-    margin-left: 50%;
-    margin-top: 2%;
-    padding-top: 1px;
-    padding-left: 10px;
-    width: 150px;
-    height: 43px;
-    border: 1px solid black;
-    border-radius: 15px;
-}*/
 
 .log_btn button{
     margin-top: 3%;
