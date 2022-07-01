@@ -1,165 +1,63 @@
 <?php
+<<<<<<< HEAD
+class Employes
+{
+    private $_id;
+    private $_nom;
+    private $_prenom;
+    private $_statut;
 
-class ChefScolarite {
-
-    private $id;
-
-    private $email;
-
-    private $password;
-
-    private $nom;
-
-    private $prenom;
-
-    private $dateNaissance;
-
-    private $lieuNaissance;
-
-    private $nationalite;
-
-    private $genre;
-
-    private $contact;
-
-    private $statut;
-
-    private $adresse;
-
-    public function getId(): ?int
+    public function __construct($_id, $_nom, $_prenom, $_statut)
     {
-        return $this->id;
+        $this->_id = $_id;
+        $this->_nom = $_nom;
+        $this->_prenom = $_prenom;
+        $this->_statut = $_statut;
     }
 
-    public function getEmail(): ?string
+    public function getId()
     {
-        return $this->email;
+        return $this->_id;
     }
 
-    public function setEmail(string $email): self
+    public function getNom()
     {
-        $this->email = $email;
-
-        return $this;
+        return $this->_nom;
     }
 
-    public function getPassword(): string
+    public function getPrenom()
     {
-        return $this->password;
+        return $this->_prenom;
     }
 
-    public function setPassword(string $password): self
+    public function getStatut()
     {
-        $this->password = $password;
-
-        return $this;
+        return $this->_statut;
     }
 
-    public function getNom(): ?string
+}
+
+function func1liste()
+{
+    $con = mysqli_connect("localhost", "root", "", "PROJET_WEB");
+
+    if (!$con)
     {
-        return $this->nom;
+        die("Connection failed: " . mysqli_connect_error());
     }
-
-    public function setNom(string $nom): self
-    {
-        $this->nom = $nom;
-
-        return $this;
-    }
-
-    public function getPrenom(): ?string
-    {
-        return $this->prenom;
-    }
-
-    public function setPrenom(string $prenom): self
-    {
-        $this->prenom = $prenom;
-
-        return $this;
-    }
-
-    public function getDateNaissance(): ?\DateTimeInterface
-    {
-        return $this->dateNaissance;
-    }
-
-    public function setDateNaissance(\DateTimeInterface $dateNaissance): self
-    {
-        $this->dateNaissance = $dateNaissance;
-
-        return $this;
-    }
-
-    public function getLieuNaissance(): ?string
-    {
-        return $this->lieuNaissance;
-    }
-
-    public function setLieuNaissance(string $lieuNaissance): self
-    {
-        $this->lieuNaissance = $lieuNaissance;
-
-        return $this;
-    }
-
-    public function getNationalite(): ?string
-    {
-        return $this->nationalite;
-    }
-
-    public function setNationalite(string $nationalite): self
-    {
-        $this->nationalite = $nationalite;
-
-        return $this;
-    }
-
-    public function getGenre(): ?string
-    {
-        return $this->genre;
-    }
-
-    public function setGenre(string $genre): self
-    {
-        $this->genre = $genre;
-
-        return $this;
-    }
-
-    public function getContact(): ?string
-    {
-        return $this->contact;
-    }
-
-    public function setContact(string $contact): self
-    {
-        $this->contact = $contact;
-
-        return $this;
-    }
-
-    public function getAdresse(): ?string
-    {
-        return $this->adresse;
-    }
-
-    public function setAdresse(string $adresse): self
-    {
-        $this->adresse = $adresse;
-
-        return $this;
-    }
-
-    public function getStatut(): ?string
-    {
-        return $this->statut;
-    }
-
-    public function setStatut(string $statut): self
-    {
-        $this->statut = $statut;
-
-        return $this;
+    else{
+        $sql = "SELECT id, nom, prenom, statut FROM Employes";
+        $result = mysqli_query($con, $sql);
+        $lim = mysqli_num_rows($result);
+        $tab = array();
+        for($i = 0; $i < $lim;  $i++)
+        {
+            $row = mysqli_fetch_assoc($result);
+	    $obj = new Employes($row['id'], $row['nom'], $row['prenom'], $row['statut']);
+            $tab[$i] = $obj;
+        }
+        mysqli_close($con);
+        return $tab;
     }
 }
+?>

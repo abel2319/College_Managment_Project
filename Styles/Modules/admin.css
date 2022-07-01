@@ -15,7 +15,7 @@
     border-collapse: collapse;
     margin-left: 1%;
     margin-right: 5%;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
 }
 
@@ -24,6 +24,9 @@
 }
 .table_inf tr:nth-child(odd){
     background-color: lightcyan;
+}
+.table_inf tr:first-child{
+    background-color: silver;
 }
 
 .table_line{
