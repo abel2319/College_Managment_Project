@@ -5,7 +5,7 @@ $nom = $_POST["firstname"];
 $prenom = $_POST["lastname"] ;
 $sexe = $_POST["sex"];
 $photo = $_POST["picture"] ;
-$newURL1 = '../../Vue/Inscription/inscript_2.php';
+$newURL1 = '../../Vue/inscript_2.php';
 if(isset($submit1)){
     if (!preg_match("/^[a-z A-Z ]*$/", $nom) OR
                 !preg_match("/^[a-z A-Z ]*$/", $prenom)) {
