@@ -1,0 +1,106 @@
+.liens_gauche .bulletin{
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.bulletinI{
+    display: grid;
+    grid-template-columns: 80% 10%;
+    height: 150px;
+    padding-top: 15px;
+}
+.bulletin_gauche{
+    border: 1px black solid;
+    
+}
+.bulletin_head{
+    padding-top: 7px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.bulletin_head_image1{
+    width: 80px;
+    height: 80px;
+    
+    
+}
+.bulletin_head_image2{
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+}
+
+.bulletin_head_text{
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.bulletin_droit{
+    padding: 70%;
+}
+.bulletin_droit button{
+    font-size: 25px;
+}
+
+.tiret{
+    width: 50px;
+}
+
+#head_bull {
+    text-align: center;
+    font-weight: bold; 
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+table{
+    margin: 0 auto;
+}
+
+tr:nth-child(even) { 
+    background-color: lightgray; 
+}
+
+#head_tabl {
+    background-color: #0435FC;
+    font-weight: bold;
+    color: white;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#nom_etu {
+    margin-left: 130px;
+    border:none;
+}
+
+#prenom_etu {
+    margin-left: 105px;
+    border:none;
+}
+
+#mat_etu {
+    margin-left: 20px;
+}
+
+#naiss_etu {
+    margin-left: 20px;
+    border:none;
+}
+
+#filiere_etu {
+    margin-left: 115px;
+    border:none;
+}
+
+.infos_etu {
+    font-weight: bold;
+    text-decoration: underline;  
+    margin-left: 10px;
+}

@@ -18,7 +18,7 @@
             </div>
             <ul class="liens_gauche"> 
                 <li class="accueil"><a href="sco_home.php">Accueil</a></li> 
-                <li class="inscription"><a href="recherche.php">Recherche</a></li>
+                <li class="recherche"><a href="recherche.php">Recherche</a></li>
                 <li class="notes"><a href="note.php">Notes</a></li>
                 <li class="filiere"><a href="filiere.php">Filière</a></li>
             </ul>
@@ -29,7 +29,7 @@
     </div>
     <div class="header_block" id="header_block">
         <p class="header_text">Welcome to your Dashboard</p>
-        <div class="log_btn"><button type="submit" name="bouton" formaction="../index.php" autofocus>log out</button></div>
+        <div class="log_btn"><button type="submit" name="bouton" formaction="../index.php">log out</button></div>
     </div>
     <div class="center_block" id="center_block">
         <p>just to see all</p>
