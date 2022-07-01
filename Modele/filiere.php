@@ -1,39 +1,15 @@
 <?php
-include_once("Connection.php");
 class Filiere
-{ 
-    private $_id;
+{
     private $_nom;
     private $_nbr;
     private $_responsable_filiere;
-
+    
     public function __construct($_nom, $_nbr, $_responsable_filiere)
     {
-        $con = new Connect();
-        $con = $con->connector();
-
-        $sql = "SELECT id FROM Filiere";
-        $result = mysqli_query($con, $sql);
-        if (mysqli_num_rows($result) > 0) {
-        // output data of each row
-        $i = 0;
-        while($row = mysqli_fetch_assoc($result)) {
-           $mat[$i] = $row["id"];
-           $i++;
-        }
-        } else {
-            $this->_id = 1;
-        }
-        mysqli_close($con);
-        $this->_id = $mat[mysqli_num_rows($result)-1] + 1;
         $this->_nom = $_nom;
         $this->_nbr = $_nbr;
         $this->_responsable_filiere = $_responsable_filiere;
-    }
-
-    public function getId()
-    {
-        return $this->_id;
     }
 
     public function getNom()
@@ -51,14 +27,53 @@ class Filiere
         return $this->_responsable_filiere;
     }
 
+    public function getId(){
+
+        $con = mysqli_connect("localhost", "root", "", "PROJET_WEB");
+        
+        if (!$con)
+        {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+
+        $sql = "SELECT id FROM Filiere";
+        $result = mysqli_query($con, $sql);
+
+        if (mysqli_num_rows($result) > 0)
+        {
+            // output data of each row
+            $i = 0;
+
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $mat[$i] = $row["id"];
+                $i++;
+            }
+        }
+        
+        else
+        {
+            echo "0 résultats";
+        }
+
+        return $mat[mysqli_num_rows($result)-1];
     
+        mysqli_close($con);
+    }
 
-    public function enregistrerFiliere()
+    public function enregistrerFiliere($n, $respoF)
     {
+        $filiere = new Filiere();
+        $id = $filiere->getId() + 1;
+        
+        $con = mysqli_connect("localhost", "root", "", "PROJET_WEB");
+        
+        if (!$con)
+        {
+            die("Connection failed: " . mysqli_connect_error());
+        }
 
-        $con = new Connect();
-        $con = $con->connector();
-        $sql = "INSERT INTO Filiere VALUES ('$this->_id', '$this->_nom', '$this->_responsable_filiere')";
+        $sql = "INSERT INTO Filiere VALUES ('$id', '$n', '$respoF')";
         
         if (mysqli_query($con, $sql))
         {
@@ -75,8 +90,12 @@ class Filiere
 
     public function deleteFiliere($idF)
     {
-        $con = new Connect();
-        $con = $con->connector();
+        $con = mysqli_connect("localhost", "root", "", "PROJET_WEB");
+        
+        if (!$con)
+        {
+            die("Connection failed: " . mysqli_connect_error());
+        }
 
         $sql = "Delete FROM Filiere where id = $idF";
 
@@ -92,8 +111,6 @@ class Filiere
     
         mysqli_close($con);
     }
-
-    
 
     public function modifierResponsableOfFiliere($idF, $respoF)
     {

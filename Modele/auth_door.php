@@ -5,7 +5,7 @@ $user = "root";
 $pwd = "";
 $db = "PROJET_WEB";
 
-function crypter($ch)
+/*function crypter($ch)
 {
   for($i=0; $i<strlen($ch); $i++){
     if('A' <= $ch[$i] AND $ch[$i] <= 'Z'){
@@ -16,36 +16,32 @@ function crypter($ch)
     }
   }
   return $ch;
-}
-
-echo crypter('jesuisabel');
+}*/
 
 $conn = mysqli_connect($server, $user, $pwd, $db);
 if($conn AND isset($_POST['user_name']) AND isset($_POST['user_pwd'])){
   $n = $_POST['user_name'];
   $p = $_POST['user_pwd'];
-  $sql = "SELECT * FROM Directeur WHERE email='$n' AND mot_de_passe='$p'";
+  $sql = "SELECT statut FROM Employes WHERE email='$n' AND mot_de_passe='$p'";
   $result = mysqli_query($conn, $sql);
   $nrow = mysqli_num_rows($result);
   if($nrow == 1){
-    $url = '../Vue/Home_dirlo.php';
+    $row = mysqli_fetch_assoc($result);
+    if($row['statut'] == 'Directeur')
+      $url = '../Vue/dir_home.php';
+    elseif($row['statut'] == 'Administrateur')
+      $url = '../Vue/admin_filieres.php';
+    elseif($row['statut'] == 'Chef Scolarite')
+      $url = '../Vue/sco_home.php';
+    else
+      $url = '../Vue/auth.php';
     header('Location: '.$url);
     exit();
-  }
-  else{
-    $sql = "SELECT * FROM ChefScolarite WHERE email='$n' AND mot_de_passe='$p'";
-    $result = mysqli_query($conn, $sql);
-    $nrow = mysqli_num_rows($result);
-    if($nrow == 1){
-      $url = 'Vue/sco_home.php';
-      header('Location: '.$url);
-      exit();
-    }
   }
   mysqli_close($conn);
 }
 
-$url = '../index.php';
+$url = '../Vue/auth.php';
 header('Location: '. $url);
 
 
