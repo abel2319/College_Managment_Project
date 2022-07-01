@@ -9,7 +9,7 @@
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
-    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/dirlo_filieres.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/dir_filieres.css"/>
 </head>
 <body>
     <?php

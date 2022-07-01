@@ -1,15 +1,22 @@
 <?php
 class Filiere
 {
+    private $_id;
     private $_nom;
     private $_nbr;
     private $_responsable_filiere;
 
-    public function __construct($_nom, $_nbr, $_responsable_filiere)
+    public function __construct($_id, $_nom, $_nbr, $_responsable_filiere)
     {
+        $this->_id = $_id;
         $this->_nom = $_nom;
         $this->_nbr = $_nbr;
         $this->_responsable_filiere = $_responsable_filiere;
+    }
+
+    public function getId()
+    {
+        return $this->_id;
     }
 
     public function getNom()
@@ -25,40 +32,6 @@ class Filiere
     public function getResp()
     {
         return $this->_responsable_filiere;
-    }
-
-    public function getId(){
-
-        $con = mysqli_connect("localhost", "root", "", "PROJET_WEB");
-        
-        if (!$con)
-        {
-            die("Connection failed: " . mysqli_connect_error());
-        }
-
-        $sql = "SELECT id FROM Filiere";
-        $result = mysqli_query($con, $sql);
-
-        if (mysqli_num_rows($result) > 0)
-        {
-            // output data of each row
-            $i = 0;
-
-            while($row = mysqli_fetch_assoc($result))
-            {
-                $mat[$i] = $row["id"];
-                $i++;
-            }
-        }
-        
-        else
-        {
-            echo "0 résultats";
-        }
-
-        return $mat[mysqli_num_rows($result)-1];
-    
-        mysqli_close($con);
     }
 
     public function enregistrerFiliere($n, $respoF)
@@ -171,19 +144,20 @@ function func1liste()
         die("Connection failed: " . mysqli_connect_error());
     }
     else{
-        $sql = "SELECT id, nom, responsable_filiere FROM Filiere";
+        $sql = "SELECT * FROM Filiere";
         $result = mysqli_query($con, $sql);
         $lim = mysqli_num_rows($result);
         $tab = array();
         for($i = 0; $i < $lim;  $i++)
         {
             $row = mysqli_fetch_assoc($result);
+	    $id_F = $row['id'];
             $name_F = $row['nom'];
             $resp_F = $row['responsable_filiere'];
             $sql = 'SELECT * FROM Etudiant WHERE id_Filiere='.$row['id'];
             $resultt = mysqli_query($con, $sql);
 	    $nb = mysqli_num_rows($resultt);
-	    $obj = new Filiere($name_F, $nb, $resp_F);
+	    $obj = new Filiere($id_F, $name_F, $nb, $resp_F);
             $tab[$i] = $obj;
         }
         mysqli_close($con);
