@@ -140,14 +140,14 @@ CREATE TABLE EtudiantHasNoteInMatiere
       INSERT INTO Employes (id, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, statut,mot_de_passe) VALUES ('3', 'Steven', 'Wiley', '1969-03-01', 'Houêto', 'Benin', 'steven.wiley@gmail.com', 'M', '23000901', 'Parakou','Administrateur','prw_gh_sdvvh');
 
     -- INSERTION DANS Etudiant
-    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('1', 'Day', 'Christine', '2000-06-05', 'Cotonou', 'Benin', 'day.christine@gmail.com', 'F', '98327890', 'Dangbo', "Lien vers la photo", DEFAULT);
+    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('1', 'Day', 'Christine', '2000-06-05', 'Cotonou', 'Benin', 'day.christine@gmail.com', 'F', '98327890', 'Dangbo', "Lien vers la photo", 1);
 
-    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('2', 'Christine', 'Ewing', '2000-07-04', 'Calavi', 'Benin', 'christine.ewing@gmail.com', 'F', '91337870', 'Dangbo', "Lien vers la photo", DEFAULT);
+    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('2', 'Christine', 'Ewing', '2000-07-04', 'Calavi', 'Benin', 'christine.ewing@gmail.com', 'F', '91337870', 'Dangbo', "Lien vers la photo", 2);
 
-    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('3', 'Hector', 'Watts', '2000-03-05', 'Libreville', 'Gabon', 'hector.watt@gmail.com', 'M', '92189000', 'Dangbo', "Lien vers la photo", DEFAULT);
+    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('3', 'Hector', 'Watts', '2000-03-05', 'Libreville', 'Gabon', 'hector.watt@gmail.com', 'M', '92189000', 'Dangbo', "Lien vers la photo", 1);
 
 
-    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('4', 'Brooke', 'Henry', '2002-07-08', 'Cotonou', 'Benin', 'day.christine@gmail.com', 'M', '97837890', 'Dangbo', "Lien vers la photo", DEFAULT);
+    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('4', 'Brooke', 'Henry', '2002-07-08', 'Cotonou', 'Benin', 'day.christine@gmail.com', 'M', '97837890', 'Dangbo', "Lien vers la photo", 2);
 
-    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('5', 'ADAGBOTO', 'Flych', '2004-09-05', 'Abidjan', "Cote d'Ivoire", 'day.christine@gmail.com', '', '97347890', 'Calavi', "Lien vers la photo", DEFAULT);
+    INSERT INTO Etudiant (matricule, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, photo, id_Filiere ) VALUES ('5', 'ADAGBOTO', 'Flych', '2004-09-05', 'Abidjan', "Cote d'Ivoire", 'day.christine@gmail.com', '', '97347890', 'Calavi', "Lien vers la photo", 1);
        

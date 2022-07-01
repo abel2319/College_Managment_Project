@@ -1,3 +1,22 @@
+var decision = false;
+
+function first_time()
+{
+  if(decision == false){
+    var obj1 = document.getElementById("user_name");
+    var obj2 = document.getElementById("user_pwd");
+    var ch1 = obj1.value;
+    var ch2 = obj2.value;
+
+    obj.style.outline = 'groove 3px green';
+    obj.style.outline = 'groove 3px green';
+    decision = true;
+  }
+}
+
+if(decision == false)
+  first_time();
+
 function verifier_champ_pwd()
 {
   var obj = document.getElementById("user_pwd");
