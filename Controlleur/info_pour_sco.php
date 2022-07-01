@@ -2,7 +2,7 @@
 include('../Modele/Filiere.php');
 
 $table = func1liste();
-echo count($table);
+
 if(count($table) > 0){
 echo ' 
         <table class="table_inf">
