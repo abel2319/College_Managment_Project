@@ -16,6 +16,7 @@
     ?>
 
       <div class="center_block" id="center_block">
+      <form  action ="../Controlleur/Inscription/inscription3.php" method="post">
       <div class = "container inscript_3">
         <div class="row">
           <div class="col-2"></div>
@@ -38,7 +39,7 @@
                      <div class="col "></div>
                           <div class="col">
                             <br />
-                          <form action="../../Controlleur/Inscription/inscription3.php" method="post">
+                          
                             <label for="course_of_study" class="label_course_of_study"
                               ><em>Filière :</em>
                             </label>
@@ -121,9 +122,9 @@
                 <div class="col"></div>
                           <div class="col"> 
                 <a role="button" class="btn btn-outline-secondary" href="inscript_2.php">Précédent</a>
+                <button class="btn btn-outline-secondary"  type = "submit" name = "btn3">Enregistrer</button>
+                <!--<a role="button" class="btn btn-outline-secondary">Enregistrer</a>-->
                 
-                <a role="button" class="btn btn-outline-secondary">Enregistrer</a>
-                </form>
               </div> 
           <div class="col"></div>
         </div>
@@ -132,6 +133,7 @@
         </div>
         </div>
       </div>
+      </form>
     </div>
   </body>
 </html>

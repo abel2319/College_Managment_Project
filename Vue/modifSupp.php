@@ -13,7 +13,8 @@
 </head>
 <body>
     <?php
-        include_once('panel.php')
+        include_once('panel.php');
+        session_start();
     ?>
 
         <div class="center_block" id="center_block">
@@ -26,7 +27,7 @@
                               type="text"
                               class="form-control"
                               id="firstname"
-                              placeholder="ASSOGBA"
+                              value= "<?php echo $_SESSION["nom"] ?>"
                               name="firstname"
                               width="50px"
                             /><br /><br />
@@ -37,7 +38,7 @@
                                   type="text"
                                   class="form-control"
                                   id="lastname"
-                                  placeholder="Pierre"
+                                  value="<?php echo$_SESSION["prenom"] ?>"
                                   name="lastname"
                                 /><br /><br />
                   <label for="sex" class="label_sex"><em>Sexe :</em> </label>
@@ -46,7 +47,7 @@
                                   class="form-control"
                                   list="kind"
                                   id="sex"
-                                  placeholder="Masculin ou Féminin"
+                                  value =  "<?php echo $_SESSION['genre'] ?>"
                                   name="sex"
                                 /><br />
                                 <datalist id="kind">
@@ -60,6 +61,7 @@
                                 <input
                                   type="file"
                                   class="form-control"
+                                  value =  "<?php echo $_SESSION['photo'] ?>"
                                   id="picture"
                                   name="picture"
                                 /><br />
@@ -74,7 +76,7 @@
                           type="date"
                           class="form-control"
                           id="datebirth"
-                          placeholder="Date de naissance"
+                          value = "<?php echo $_SESSION["dateNaiss"] ?>"
                           name="datebirth"
                           required
                         /><br /><br />
@@ -85,7 +87,7 @@
                           type="text"
                           class="form-control"
                           id="placebirth"
-                          placeholder="Lieu de naissance"
+                          value = "<?php echo $_SESSION["lieuNaiss"] ?>"
                           name="placebirth"
                           required
                         /><br /><br />
@@ -96,7 +98,7 @@
                           type="text"
                           class="form-control"
                           id="nationality"
-                          placeholder="Nationalité"
+                          value = "<?php echo $_SESSION["nation"] ?>"
                           name="nationality"
                           required
                         />
@@ -111,7 +113,7 @@
                               class="form-control"
                               list="course_study"
                               id="course_of_study"
-                              placeholder="TIC"
+                              value = "<?php echo $_SESSION['idF'] ?>"
                               name="course_of_study"
                               required
                             /><br />
@@ -128,7 +130,7 @@
                   type="texte"
                   class="form-control"
                   id="email"
-                  placeholder="assogba_pierre01@gmail.com"
+                  value = "<?php echo $_SESSION['email'] ?>"
                   name="email"
                   required
                 />
@@ -140,7 +142,7 @@
                   type="text"
                   class="form-control"
                   id="contact"
-                  placeholder="Contact"
+                  value = "<?php echo $_SESSION['contact'] ?>"
                   name="contact"
                   required
                 /><br /><br />
@@ -151,7 +153,7 @@
                   type="text"
                   class="form-control"
                   id="address"
-                  placeholder="RUE 1547"
+                  value = "<?php echo $_SESSION['adresse'] ?>"
                   name="address"
                   required
                 /><br />  <br /> 
