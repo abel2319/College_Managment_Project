@@ -132,7 +132,7 @@ CREATE TABLE EtudiantHasNoteInMatiere
 
    -- INSERTION DANS Employes
 
-      INSERT INTO Employes (id, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, statut,mot_de_passe) VALUES ('1', 'Kim', 'Molina', '1980-01-03', 'Avrankou', 'Benin', 'kim.molina@gmail.com', 'F', '60602400', 'Calavi', 'Secrétaire','prw_gh_sdvvh');
+      INSERT INTO Employes (id, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, statut,mot_de_passe) VALUES ('1', 'Kim', 'Molina', '1980-01-03', 'Avrankou', 'Benin', 'kim.molina@gmail.com', 'F', '60602400', 'Calavi', 'Chef Scolarite','prw_gh_sdvvh');
 
       INSERT INTO Employes (id, nom, prenom, date_naissance, lieu_naissance, nationalite, email, genre, contact, adresse, statut,mot_de_passe) VALUES ('2', 'Constant', 'HOUEDJO', '1970-06-05', 'Abomey', 'Benin', 'constant.houedjo@gmail.com', 'M', '93000401', 'Cotonou','Directeur','prw_gh_sdvvh');
 

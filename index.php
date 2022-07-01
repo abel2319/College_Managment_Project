@@ -10,9 +10,9 @@
 
     <form method="post" action="Modele/auth_door.php" id="formulaire" onsubmit="return envoyer()">
       <label for="user_name" class="etiquette">Email</label><br />
-      <input id="user_name" type="text" name="user_name" class="login_field" autofocus onchange="verifier_champ_name();" />
+      <input id="user_name" type="text" name="user_name" class="login_field" autofocus placeholder="Email" onchange="verifier_champ_name();" />
       <label for="user_pwd" class="etiquette">PassWord</label><br />
-      <input id="user_pwd" type="password" name="user_pwd" class="login_field" onchange="verifier_champ_pwd();" />
+      <input id="user_pwd" type="password" name="user_pwd" class="login_field" placeholder="PassWord" onchange="verifier_champ_pwd();" />
       <input id="login_sub" type="submit" name="login_sub" value="log in" />
     </form>
 

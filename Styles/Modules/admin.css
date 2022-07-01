@@ -1,3 +1,10 @@
+.liens_gauche .accueil{
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 .aah{
     margin-bottom: 2%;
     margin-top: 40px;
