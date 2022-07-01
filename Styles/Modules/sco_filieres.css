@@ -8,7 +8,7 @@
     border-collapse: collapse;
     margin-left: 1%;
     margin-right: 5%;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
 }
 
@@ -18,11 +18,31 @@
 .table_inf tr:nth-child(odd){
     background-color: lightcyan;
 }
+.table_inf th{
+    padding: 2%;
+}
 
 .table_line{
 }
 
 .table_col{
-    padding: 2%;
     width: 1%;
+    font-size: 18px;
+}
+
+.entree{
+    border: none;
+    padding: 2%;
+    margin: 4%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.entree1{
+    visibility: hidden;
+    width: 0;
+}
+
+.img_a{
+    width: 40px;
 }
