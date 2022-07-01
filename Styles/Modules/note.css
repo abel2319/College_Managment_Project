@@ -1,0 +1,55 @@
+.course_of_study_input {
+  margin-left: 25px;
+  border: 0ch;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.id_input {
+  border: 0ch;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.firstname_input {
+  margin-left: 18px;
+  border: 0ch;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.lastname_input {
+  border: 0ch;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.id_label,
+.firstname_label,
+.course_of_study_label,
+.lastname_label {
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.table_head_1,
+.table_head_2,
+.table_head_3 {
+  border: 3px solid black;
+  padding: 15px;
+  background-color: #063353;
+  color: white;
+}
+.table_1 {
+  margin-top: 100px;
+  margin-left: 140px;
+}
+td {
+  text-align: center;
+}
+.table_body_1,
+.table_body_2,
+.table_body_3 {
+  border: 1px solid black;
+  margin-top: 3px;
+  padding: 15px;
+}
+.all_button {
+  margin-left: 350px;
+  margin-top: 50px;
+}
