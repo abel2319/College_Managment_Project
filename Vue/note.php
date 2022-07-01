@@ -53,8 +53,8 @@
                 <div class="col-1"></div>
           </div> 
             <div class="all_button">
-             <a role="button" class="btn btn-outline-secondary" href= "modifSupp.php">Modifier</a>
-             <a role="button" class="btn btn-outline-secondary" href= "modifSupp.php">Enregistrer</a>
+             <a role="button" class="btn btn-outline-secondary" href= "#">Modifier</a>
+             <a role="button" class="btn btn-outline-secondary" href= "#">Enregistrer</a>
           <div> 
         <div>   
     </div>

@@ -63,3 +63,6 @@
   width: 130px;
   height: 40px;
 }
+.centre_block{
+  overflow-y: auto;
+}

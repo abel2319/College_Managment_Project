@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chef Sco Dashboard</title>
+    <title>chef Dirlo Dashboard</title>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
-    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel_directeur.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
-    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/sco_home.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/dirlo_home.css"/>
 </head>
 <body>
     <?php
-        include_once('panel.php')
+        include_once('panel_directeur.php')
     ?>
     <div class="center_block" id="center_block">
         <h1 class="aah">Globals informations</h1>
@@ -38,9 +38,8 @@
             </div>
         </div>
         <div class="container">
-                <div class="tab"><a href="inscript_1.php"><img src="images/bulletin.jpg" alt="" class="bul1"><h1>Inscription</h1></a></div>
-                <div class="tab"><a href="note.php"><img src="images/all-2.jpg" alt="" class="bul2"><h1>Notes</h1></a></div>
-                <div class="tab"><a href="bulletin.php"><img src="images/all-1.jpg" alt="" class="bul2"><h1>Diplomes</h1></a></div>
+                <div class="tab1"><a href="#"><img src="images/research.png" alt="" class="bul1"><h1>Rechercher Etudiants</h1></a></div>
+                <div class="tab2"><a href="note.php"><img src="images/all-2.jpg" alt="" class="bul2"><h1>Notes</h1></a></div>
         </div>
     </div>
 </body>

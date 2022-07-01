@@ -14,17 +14,16 @@
         <nav class = "menu">
             <div class="user">
                 <div class="user_img"><img src = "images/profil.jpg" class="profil"></div>
-                <p class="user_mail">chefsco@imsp-uac.org</p>
+                <p class="user_mail">directuer@imsp-uac.org</p>
             </div>
             <ul class="liens_gauche"> 
                 <li class="accueil"><a href="sco_home.php">Accueil</a></li> 
-                <li class="inscription"><a href="inscrit.php">Inscription</a></li>
-                <li class="notes"><a href="search_note.php">Notes</a></li>
-                <li class="bulletin"><a href="bulletin.php">Bulletins</a></li>
+                <li class="recherche"><a href="recherche.php">Recherche</a></li>
+                <li class="notes"><a href="note.php">Notes</a></li>
                 <li class="filiere"><a href="filiere.php">Filière</a></li>
             </ul>
             <div class="logo">
-                <img src = "images/logo.jpeg">
+                <img src = "images/logo.jpeg"x>
             </div>
         </nav> 
     </div>
