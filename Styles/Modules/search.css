@@ -9,6 +9,7 @@
   padding-bottom: 25px;
   padding-left: 40px;
   padding-right: 40px;
+  border-radius: 2px;
   font-size: 22px;
 }
 .id_input {
@@ -23,6 +24,7 @@
   padding-bottom: 25px;
   padding-left: 60px;
   padding-right: 60px;
+  border-radius: 2px;
   font-size: 22px;
 }
 .firstname_input {
@@ -37,6 +39,7 @@
   padding-bottom: 25px;
   padding-left: 50px;
   padding-right: 50px;
+  border-radius: 2px;
   font-size: 22px;
 }
 .lastname_input {
