@@ -26,7 +26,7 @@
     </div>
     <div class="header_block" id="header_block">
         <p class="header_text">Administrator</p>
-        <div class="log_btn"><button type="submit" name="bouton" formaction="../index.php" autofocus>log out</button></div>
+        <div class="log_btn"><button type="submit" name="bouton" formaction="../index.php">log out</button></div>
     </div>
     <div class="center_block" id="center_block">
         <p>just to see all</p>

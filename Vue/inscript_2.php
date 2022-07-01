@@ -15,6 +15,7 @@
         include_once('panel.php')
     ?>
       <div class="center_block" id="center_block">
+    <form  action ="../Controlleur/Inscription/inscription2.php" method="post">
       <div class = "container inscript_2">
         <div class="row">
           <div class="col-2"></div>
@@ -37,7 +38,7 @@
               <div class="col"></div>
                   <div class="col">
                         <br />
-                        <form action="../../Controlleur/Inscription/inscription2.php" method="post">
+                        
                         <label for="datebirth" class="label_datebirth"
                           ><em>Date de Naissance :</em>
                         </label>
@@ -92,10 +93,14 @@
                 <div class="row next_previous-inscript_2">
                 <div class="col"></div>
                           <div class="col">  
-                <a role="button" class="btn btn-outline-secondary" href="inscript_1.php">Précédent</a>
                 
-                <a role="button" class="btn btn-outline-secondary" href="inscript_3.php">Suivant</a>
-                </form>
+                <a role="button" class="btn btn-outline-secondary" href="inscript_1.php">Précédent</a>
+                <button class="btn btn-outline-secondary"  type = "submit" name = "btn2">Suivant</button>
+                
+                
+               <!-- <a role="button" class="btn btn-outline-secondary" href="inscript_3.php">Suivant</a>
+              -->
+             
               </div>
               <div class="col"></div>
             </div>
@@ -104,6 +109,7 @@
         </div>
         </div>
       </div>
+  </form>
     </div>
   </body>
 </html>

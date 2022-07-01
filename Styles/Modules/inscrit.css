@@ -1,9 +1,15 @@
+.liens_gauche .insciption{
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 .menu_inscription {
   background-color: blue;
   color: white;
   text-align: center;
   padding: 20px;
-  font-size: 25px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .inscript_student:hover,
@@ -11,7 +17,6 @@
 .delete_student:hover {
   background-color: #90bbef;
   color: white;
-  font-size: 20px;
   padding: 15px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -19,7 +24,6 @@
 .edit_student,
 .delete_student {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px;
   background-color: #ecebeb;
   padding: 15px;
   border-radius: 5px;
