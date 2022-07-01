@@ -7,13 +7,13 @@
     <title>chef Dirlo Dashboard</title>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
-    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel_directeur.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/dirlo_home.css"/>
 </head>
 <body>
     <?php
-        include_once('panel_directeur.php')
+        include_once('panel.php')
     ?>
     <div class="center_block" id="center_block">
         <h1 class="aah">Globals informations</h1>
