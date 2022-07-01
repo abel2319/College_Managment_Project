@@ -127,7 +127,6 @@ class Etudiant
         mysqli_close($con);
     }
 
-
     public function inscritEtudiant(){
         $con = new Connect();
         $conn = $con->connector();
@@ -158,6 +157,86 @@ class Etudiant
     }
 
 }
+
+function note_for_matricule($matricule){
+
+    $con = new Connect();
+    $con = $con->connector();
+    $tab = array();
+    $sql_1 ="SELECT * FROM EtudiantHasNoteInMatiere  WHERE id_Etudiant = $matricule";
+    $resultt = mysqli_query($con, $sql_1);
+    $lim_1 = mysqli_num_rows($resultt);
+    if($lim_1 !=0){
+    for($j = 0; $j < $lim_1;  $j++)
+            {
+                 $row_1 = mysqli_fetch_assoc($resultt);
+                 $id = $row_1['id_Matiere'];
+                $tab[0] = $row_1['note'];
+                $tab[1] = $row_1['note_ratrappage'];
+                 
+                 $sql_2 ="SELECT * FROM Matiere  WHERE id= $id";
+                 $resulttt = mysqli_query($con, $sql_2);
+                 $row_2 = mysqli_fetch_assoc($resulttt);
+                 $tab[2] = $matiere = $row_2['nom'];
+                 
+                 
+                
+            } 
+
+        }else{
+            $tab[0] = 0;
+            $tab[1] = 0;
+            $tab[2] = 'null';
+
+        }
+            return $tab;
+}
+
+function select_firstname_lastname(){
+    $con = new Connect();
+    $con = $con->connector();
+        $sql = "SELECT * FROM Etudiant";
+        $result = mysqli_query($con, $sql);
+        $lim = mysqli_num_rows($result);
+
+        $tab = array();
+        $k  = 0;
+        $obj = array();
+        for($i = 0; $i < $lim;  $i++)
+        {
+            $row = mysqli_fetch_assoc($result);
+            
+            $matricule = $row['matricule'];
+	        $nom = $row['nom'];
+            $prenom = $row['prenom'];
+            $date_naissance = $row['date_naissance'];
+            $lieu_naissance = $row['lieu_naissance'];
+            $nationalite = $row['nationalite'];
+            $email = $row['email'];
+            $genre = $row['genre'];
+            $contact = $row['contact'];
+            $adresse = $row['adresse'];
+            $photo = $row['photo'];
+            $id_Filiere = $row['id_Filiere'];
+            $plus = note_for_matricule($matricule);
+            $obj[0] = $matricule;
+            $obj[1] = $nom;
+            $obj[2] = $prenom;
+            $obj[3] = $plus[2];
+            $obj[4] = $plus[1];
+            $obj[5] = $plus[0];
+
+            $tab[$k] = $obj; 
+            $k ++;    
+        }
+        mysqli_close($con);
+        return $tab;
+    
+ }
+
+
+
+    
 
 function search($matricule, $nom, $prenom){
     $con = new Connect();

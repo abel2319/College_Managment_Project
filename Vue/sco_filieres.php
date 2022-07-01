@@ -17,9 +17,9 @@
     ?>
     <div class="center_block" id="center_block">
 	<h1 class="aah">Informations sur les filières</h1>
-<?php
+     <?php
         include_once('../Controlleur/info_pour_sco.php');
-?>
+     ?>
     </div>
 </body>
 </html>

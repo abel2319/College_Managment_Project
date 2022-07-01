@@ -6,7 +6,7 @@
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
-<link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/search.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/search_note.css"/>
 
 <link href="../Styles/Modules/Bootstrap/css/bootstrap.min.css"  rel="stylesheet"/>
 
@@ -17,26 +17,35 @@
     ?>
 
         <div class="center_block" id="center_block">
-                <div class="centre">
-            <label for ="id" class ="id_label">Matricule </label>
-            <input type = "text" name = "id" class ="id_input" placeholder = "Entrez matricule" size = "30" maxlength = "30" />
-            <br>
-            <br>
-            <br>
-            <br>
-            <label for ="firstname" class ="firstname_label">Nom </label>
-            <input type = "text" name = "firstname" class ="firstname_input" placeholder = "Entrez nom de l'étudiant" size = "30" maxlength = "30" />
-            <br>
-            <br>
-            <br>
-            <br>
-            <label for ="lastname" class ="lastname_label">Prénom </label>
-            <input type = "text" name = "lastname" class ="lastname_input" placeholder = "Entrez prenom de l'étudiant" size = "30" maxlength = "50"/>
-            <br>
-            <br>
-            <br>
-            <br>
-            <a role="button" class="btn btn-outline-secondary" href= "note.php">Rechercher</a>
+           <div class="centre">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <form  action ="../Controlleur/Note/note.php" method="post">
+                    <label for="course_of_study" class="course_of_study_label"
+                              >
+                              <em>Filière :</em>
+                            </label><br><br>
+                            <input
+                              type="text"
+                              class="form-control"
+                              list="course_study"
+                              id="course_of_study_label"
+                              name="course_of_study_label"
+                              required
+                            /><br />
+                            <datalist nom = "course_of_study" id="course_study">
+                              <option value="Data Science"></option>
+                              <option value="Genie logiciel"></option>
+                              <option
+                                value="Base de données et intelligence artificielle"
+                              ></option>
+                            </datalist>
+                            <br>
+                        <a role="button" class="btn btn-outline-secondary" href= "../Vue/note.php">Rechercher</a>
+                    </form>
+                </div>
+                <div class="col"></div>          
             </div>
         </div>
 </body>
