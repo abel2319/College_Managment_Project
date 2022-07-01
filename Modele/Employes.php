@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 class Employes
 {
     private $_id;
