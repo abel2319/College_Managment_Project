@@ -17,7 +17,7 @@
 }
 
 .tab{
-    box-shadow:0.5px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border:1px solid black;
     height: 100%;
     width: 20%;
@@ -28,6 +28,11 @@
     border-radius: 15px;
     text-align: center;
     text-align:bottom;
+    transition-duration: 0.3s;
+}
+
+.tab:hover{
+    width: 25%;
 }
 
 .container{

@@ -19,13 +19,20 @@
         <div class="center_block" id="center_block">
             <form action="../Controlleur/ModifSupp/searchPane.php" method="post">
             <div class="centre">
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br><br>
+            <br>
+            <br>
             <label for ="id" class ="id_label">Matricule </label>
             <input type = "text" name = "id" class ="id_input" placeholder = "Entrez matricule" size = "30" maxlength = "30" />
             <br>
             <br>
             <br>
             <br>
-            <label for ="firstname" class ="firstname_label">Nom </label>
+           <!-- <label for ="firstname" class ="firstname_label">Nom </label>
             <input type = "text" name = "firstname" class ="firstname_input" placeholder = "Entrez nom de l'étudiant" size = "30" maxlength = "30" />
             <br>
             <br>
@@ -36,7 +43,7 @@
             <br>
             <br>
             <br>
-            <br>
+            <br>-->
             <!--<a role="button" class="btn btn-outline-secondary" href= "modifSupp.php">Rechercher</a>-->
              <button class="btn btn-outline-secondary" type = "submit" name="Sbtn">Rechercher</button>
             </div>

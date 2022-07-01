@@ -11,8 +11,8 @@ $newURL = '../../Vue/modifSupp.php';
 if(isset($submit)){
     $etudiant = search($matricule, $nom, $prenom);
     $_SESSION['m'] = $matricule;
-    $_SESSION['nom'] = $nom;
-    $_SESSION['prenom'] = $prenom;
+    $_SESSION['nom'] = $etudiant->getNom();
+    $_SESSION['prenom'] = $etudiant->getPrenom();
     $_SESSION['dateNaiss'] = $etudiant->getDateNaiss();
     $_SESSION['lieuNaiss'] = $etudiant->getLieuNaiss();
     $_SESSION['nation'] = $etudiant->getNationalite();
