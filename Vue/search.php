@@ -17,7 +17,8 @@
     ?>
 
         <div class="center_block" id="center_block">
-                <div class="centre">
+            <form action="../Controlleur/ModifSupp/searchPane.php" method="post">
+            <div class="centre">
             <label for ="id" class ="id_label">Matricule </label>
             <input type = "text" name = "id" class ="id_input" placeholder = "Entrez matricule" size = "30" maxlength = "30" />
             <br>
@@ -36,8 +37,10 @@
             <br>
             <br>
             <br>
-            <a role="button" class="btn btn-outline-secondary" href= "modifSupp.php">Rechercher</a>
+            <!--<a role="button" class="btn btn-outline-secondary" href= "modifSupp.php">Rechercher</a>-->
+             <button class="btn btn-outline-secondary" type = "submit" name="Sbtn">Rechercher</button>
             </div>
+            </form>
         </div>
 </body>
 </html>

@@ -4,7 +4,7 @@ class Filiere
     private $_nom;
     private $_nbr;
     private $_responsable_filiere;
-
+    
     public function __construct($_nom, $_nbr, $_responsable_filiere)
     {
         $this->_nom = $_nom;

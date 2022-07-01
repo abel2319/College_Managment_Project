@@ -15,6 +15,7 @@
         include_once('panel.php')
     ?>
       <div class="center_block" id="center_block">
+    <form  action ="../Controlleur/Inscription/inscription1.php" method="post">
       <div class = "container inscript_1">
         <div class="row">
           <div class="col-2"></div>
@@ -32,7 +33,7 @@
               </div>
              
             </div>
-
+       
             <div class="row firstname">
                      <div class="col "></div>
                                <div class="col">
@@ -47,6 +48,7 @@
                               placeholder="ASSOGBA"
                               name="firstname"
                               width="50px"
+                              required
                             /><br />
                             </div>
                         <div class="col"></div>    
@@ -64,6 +66,7 @@
                                   id="lastname"
                                   placeholder="Pierre"
                                   name="lastname"
+                                  required
                                 /><br />  
                     </div> 
                     <div class="col"></div>                 
@@ -80,6 +83,7 @@
                                   id="sex"
                                   placeholder="Masculin ou Féminin"
                                   name="sex"
+                                  required
                                 /><br />
                                 <datalist id="kind">
                                   <option value="Féminin"></option>
@@ -105,18 +109,25 @@
                     <div class="col"></div> 
             </div>
             <br />
-             <div class="row button-next">
-            <div class="col "></div>    
+            <div class="row button-next">
+                <div class="col "></div>    
                     <div class="col">
-                    <a role="button" class="btn btn-outline-secondary" href= "inscript_2.php">Suivant</a>
+                     <button class="btn btn-outline-secondary"  type = "submit" name = "btn1">Suivant</button>
+                     <!--<a role="button" class="btn btn-outline-secondary" href= "../Controlleur/Inscription/inscription1.php" >Suivant</a>
+                    -->
                     </div> 
+                   
                 <div class="col"></div> 
             </div>
-          </div>
+          
+          </div> 
           <div class="col-2"></div>
         </div>
+      
         </div>
+        
       </div>
+    </form>
     </div>
   </body>
 </html>
