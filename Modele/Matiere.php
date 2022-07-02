@@ -40,12 +40,12 @@ class Matiere {
         return $this;
     }
 
-    public function getIdUE(): ?UE
+    public function getIdUE(): ?int
     {
         return $this->idUE;
     }
 
-    public function setIdUE(?UE $idUE): self
+    public function setIdUE(?int $idUE): self
     {
         $this->idUE = $idUE;
 

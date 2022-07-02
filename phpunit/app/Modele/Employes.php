@@ -182,11 +182,21 @@ class Employes {
         return $this->statut;
     }
 
-
     public function setStatut(string $statut): self
     {
         $this->statut = $statut;
 
         return $this;
+    }
+
+    public function getEmailVariables(){
+
+        return [
+
+            'full_name' => $this->getNom().' '.$this->getPrenom(),
+
+            'email' => $this->getEmail(),
+        ];
+
     }
 }

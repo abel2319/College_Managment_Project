@@ -2,7 +2,8 @@
 
 namespace App\Modele;
     
-class Note { 
+class Note
+{ 
    
     public  $IdEtu;
     public  $IdMat;
@@ -10,21 +11,14 @@ class Note {
     public  $NoteRat;
     public  $Status; 
 
-    public function __construct($_idEU, $_idMat, $_note=null, $_NotesRat=null, $_Statut=null)
+    public function __construct($_idEU, $_idMat, $_idnote, $_NotesRat, $_Statut)
     {
           $this->IdEtu = $_idEU;
           $this->IdMat = $_idMat;
-          $this->Note = $_note;
+          $this->Note = $_idnote;
           $this->NoteRat  = $_NotesRat;
           $this->Status = $_Statut;      
     }
-
-    public function getIdEtu(): ?int
-    {
-        
-        return $this->IdEtu;
-    }
-
 
     public function getNote(): ?int
     {
@@ -38,7 +32,6 @@ class Note {
         return $this;
     }
 
-
     public function getNoteRat(): ?int
     {
         return $this->NoteRat;
@@ -51,9 +44,16 @@ class Note {
         return $this;
     }
 
-    public function getIdMat(): ?int
+    public function getIdMat(): ?Matiere
     {
         return $this->IdMat;
+    }
+
+    public function setIdMatiere(Matiere $idMatiere): self
+    {
+        $this->IdMat = $idMatiere;
+
+        return $this;
     }
 
     public function getStatus(): ?string
@@ -67,7 +67,6 @@ class Note {
 
         return $this;
     }
-    
     public function connection(){
         $con = mysqli_connect("localhost", "root", "", "PROJET_WEB");
         if (!$con) {
@@ -111,7 +110,3 @@ class Note {
           
 }
 ?>
-
-
-
-    
