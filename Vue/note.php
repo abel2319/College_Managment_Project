@@ -14,21 +14,23 @@
         include_once('panel.php')
     ?>
     <div class="center_block" id="center_block">
-     <h1 class="aah">Informations sur les filières</h1>
-    
+        <h1 class="aah">Informations sur les filières</h1>
+        <div class="first_row">
+            <table>
+                <tr class="table_line"> 
+                    <th class="table_col">Nom</th>
+                    <th class="table_col">Prenom</th>
+                    <th class="table_col">Matiere</th>
+                    <th class="table_col">Session Normale</th>
+                    <th class="table_col">Session Rattrappage </td>
+	            </tr>;
+            </table>
+        </div>
     <div class="all_page">
-        <table>
-            <tr class="table_line"> 
-                <th class="table_col">Nom</th>
-                <th class="table_col">Prenom</th>
-                <th class="table_col">Matiere</th>
-                <th class="table_col">Note Session Normale</th>
-                <th class="table_col">Note Session Rattrappage </td>
-	       </tr>';
-        </table>
-    <?php
-        include_once('../Controlleur/Note/note.php');
-    ?>  
+        
+        <?php
+            include_once('../Controlleur/Note/note.php');
+        ?>  
     </div>
     </div>
 </body>

@@ -1,6 +1,7 @@
 .liens_gauche .bulletin{
     color: white;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
+    width: 95%;
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -10,6 +11,7 @@
     grid-template-columns: 80% 10%;
     height: 150px;
     padding-top: 15px;
+    overflow: scroll;
 }
 .bulletin_gauche{
     border: 1px black solid;
