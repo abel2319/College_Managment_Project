@@ -18,7 +18,6 @@
             </div>
             <ul class="liens_gauche"> 
                 <li class="accueil"><a href="dir_home.php">Accueil</a></li> 
-                <li class="recherche"><a href="recherche.php">Recherche</a></li>
                 <li class="filiere"><a href="dir_filieres.php">Filière</a></li>
             </ul>
             <div class="logo">

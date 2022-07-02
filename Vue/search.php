@@ -17,7 +17,7 @@
     ?>
 
         <div class="center_block" id="center_block">
-        <form action="../Controlleur/ModifSupp/searchPane.php" method="post">
+            <form action="../Controlleur/ModifSupp/searchPane.php" method="post">
             <div class="centre">
             <br>
             <br>

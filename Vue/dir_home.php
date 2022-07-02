@@ -39,7 +39,7 @@
         </div>
         <div class="container">
                 <div class="tab1"><a href="#"><img src="images/research.png" alt="" class="bul1"><h1>Rechercher Etudiants</h1></a></div>
-                <div class="tab2"><a href="note.php"><img src="images/all-2.jpg" alt="" class="bul2"><h1>Notes</h1></a></div>
+                <div class="tab2"><a href="note.php"><img src="images/all-2.jpg" alt="" class="bul2"><h1>Filières</h1></a></div>
         </div>
     </div>
 </body>
