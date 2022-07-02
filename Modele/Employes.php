@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 class Employes
 {
     private $_id;
@@ -53,7 +53,7 @@ function func1liste()
         for($i = 0; $i < $lim;  $i++)
         {
             $row = mysqli_fetch_assoc($result);
-	    $obj = new Employes($row['id'], $row['nom'], $row['prenom'], $row['statut']);
+	        $obj = new Employes($row['id'], $row['nom'], $row['prenom'], $row['statut']);
             $tab[$i] = $obj;
         }
         mysqli_close($con);
