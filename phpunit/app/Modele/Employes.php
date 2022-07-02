@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Modele;
+
 class Employes {
 
     private $id;
