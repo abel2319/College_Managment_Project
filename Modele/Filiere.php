@@ -140,7 +140,7 @@ function get_filiere(){
        $con = new Connect();
        $con = $con->connector();
 
-       $sql_filiere = "SELECT * from filiere";
+       $sql_filiere = "SELECT * from Filiere";
        $result_filiere = mysqli_query($con, $sql_filiere );
        $limit_filiere = mysqli_num_rows($result_filiere);
        $tab = array();
