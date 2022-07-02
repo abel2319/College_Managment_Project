@@ -12,13 +12,21 @@ include("../../Modele/Etudiant.php");
     $email = $_POST["email"];
     $contact = $_POST["contact"];
     $adresse = $_POST["address"];
+   
     
     $etu = new Etudiant($nom, $prenom, $dateNaiss, $lieuNaiss, $nation, $email,
         $sexe, $contact, $adresse, $photo, $filiere); 
     $etu->setMatricule($_SESSION['m']);
+    
 if(isset($_POST["btn1"])){
     $etu->modifierEtudiant(); 
+    echo "
+    <a href= '../../Vue/search_note.php'>Cliquez ici pour retourner</a>
+ ";
 }elseif(isset($_POST["btn2"])){
-    $etu->deleteEtudiant(); 
+    $etu->deleteEtudiant();
+    echo "
+   <a href= '../../Vue/search_note.php'>Cliquez ici pour retourner</a>
+";
 }
 ?>

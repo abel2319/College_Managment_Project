@@ -13,7 +13,7 @@
 </head>
 <body>
     <?php
-        include_once('panel.php')
+      include_once('panel.php')
     ?>
 
         <div class="center_block" id="center_block">
@@ -21,9 +21,8 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
-                    <form  action ="../Controlleur/Note/note.php" method="post">
-                    <label for="course_of_study" class="course_of_study_label"
-                              >
+                    <form   method="post"><!--action ="../Controlleur/Note/note.php"-->
+                    <label for="course_of_study" class="course_of_study_label">
                               <em>Filière :</em>
                             </label><br><br>
                             <input

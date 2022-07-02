@@ -1,3 +1,11 @@
+.liens_gauche .notes{
+  color: white;
+  border-bottom: 2px solid white;
+  width: 95%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .centre {
   text-align: center;
   margin-top: 190px;

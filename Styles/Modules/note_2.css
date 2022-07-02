@@ -1,3 +1,11 @@
+.liens_gauche .notes{
+  color: white;
+  border-bottom: 3px solid white;
+  width: 95%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .aah {
   margin-bottom: 2%;
   margin-top: 40px;
@@ -17,7 +25,7 @@
 
 .all_table {
   overflow: scroll;
-  height: 70vh;
+  height: 60vh;
 }
 .table_line {
   margin-left: 5%;
@@ -34,4 +42,13 @@
 .table_col {
   padding: 2%;
   width: 1%;
+}
+
+.first_row {
+  margin-left: 1%;
+  margin-right: 12%;
+  background-color: #d8dee6;
+  height: 5vh;
+  width: 76%;
+  font-size: 1.3em;
 }

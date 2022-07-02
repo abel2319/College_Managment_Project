@@ -11,7 +11,7 @@ if($conn AND isset($_POST['nom']) AND isset($_POST['resp']) AND isset($_POST['id
   $p = $_POST['resp'];
   $id = $_POST['id'];
 
-  $sql = "UPDATE Filiere SET nom='$n', responsable_filiere='$p' WHERE id=$id";
+  $sql = "UPDATE EtudiantHasNoteInMatiere SET nom='$n', responsable_filiere='$p' WHERE id=$id";
   $result = mysqli_query($conn, $sql);
   mysqli_close($conn);
 }
