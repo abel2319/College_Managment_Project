@@ -22,7 +22,7 @@
                 <li class="inscription"><a href="inscrit.php">Inscription</a></li>
                 <li class="notes"><a href="search_note.php">Notes</a></li>
                 <li class="bulletin"><a href="bulletin.php">Bulletins</a></li>
-                <li class="filiere"><a href="filiere.php">Filière</a></li>
+                <li class="filiere"><a href="scoFilieres.php">Filière</a></li>
 </ul>
             <div class="logo">
                 <img src = "images/logo.jpeg"x>

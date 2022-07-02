@@ -21,12 +21,12 @@ include("../../Modele/Etudiant.php");
 if(isset($_POST["btn1"])){
     $etu->modifierEtudiant(); 
     echo "
-    <a href= '../../Vue/search_note.php'>Cliquez ici pour retourner</a>
+    <a href= '../../Vue/search.php'>Cliquez ici pour retourner</a>
  ";
 }elseif(isset($_POST["btn2"])){
     $etu->deleteEtudiant();
     echo "
-   <a href= '../../Vue/search_note.php'>Cliquez ici pour retourner</a>
+   <a href= '../../Vue/search.php'>Cliquez ici pour retourner</a>
 ";
 }
 ?>
