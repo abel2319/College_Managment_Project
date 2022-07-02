@@ -3,6 +3,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 18vw);
   grid-template-rows: repeat(4, 13vh);
+  overflow: auto;
 }
 
 #block {

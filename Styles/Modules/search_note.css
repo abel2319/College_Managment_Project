@@ -1,0 +1,36 @@
+.liens_gauche .notes{
+  color: white;
+  border-bottom: 2px solid white;
+  width: 95%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.centre {
+  text-align: center;
+  margin-top: 190px;
+}
+.course_of_study_label {
+  color: white;
+  background-color: #063353;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 2px;
+  font-size: 22px;
+}
+.course_of_study_input {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 20px;
+}
+.search_button {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #063353;
+  padding-left: 10px;
+  padding-right: 10px;
+}

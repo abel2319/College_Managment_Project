@@ -7,9 +7,9 @@
     <title>chef Dirlo Dashboard</title>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Layouts/panel_layaouts.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
-    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel_directeur.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
     <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
-    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/dirlo_home.css"/>
+    <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/dir_home.css"/>
 </head>
 <body>
     <?php
@@ -39,7 +39,7 @@
         </div>
         <div class="container">
                 <div class="tab1"><a href="#"><img src="images/research.png" alt="" class="bul1"><h1>Rechercher Etudiants</h1></a></div>
-                <div class="tab2"><a href="note.php"><img src="images/all-2.jpg" alt="" class="bul2"><h1>Notes</h1></a></div>
+                <div class="tab2"><a href="note.php"><img src="images/all-2.jpg" alt="" class="bul2"><h1>Filières</h1></a></div>
         </div>
     </div>
 </body>

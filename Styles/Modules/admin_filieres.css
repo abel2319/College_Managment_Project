@@ -1,3 +1,7 @@
+.liens_gauche{
+    border-top: 20%;
+}
+
 .aah{
     margin-bottom: 2%;
     margin-top: 40px;
@@ -12,12 +16,12 @@
     font-size: 18px;
 }
 
-.table_inf tr:nth-child(even){
-    background-color: cyan;
-}
-.table_inf tr:nth-child(odd){
-    background-color: lightcyan;
-}
+.table_inf tr:nth-child(even) {
+    background-color: #106fff;
+  }
+  .table_inf tr:nth-child(odd) {
+    background-color: #d8dee6;
+  }
 
 .table_line{
 }

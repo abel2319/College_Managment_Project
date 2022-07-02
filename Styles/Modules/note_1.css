@@ -1,6 +1,7 @@
-.liens_gauche .note{
+.liens_gauche .note {
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
+  width: 95%;
   font-size: 1.3em;
   font-weight: bold;
 }

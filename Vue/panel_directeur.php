@@ -17,10 +17,8 @@
                 <p class="user_mail">directuer@imsp-uac.org</p>
             </div>
             <ul class="liens_gauche"> 
-                <li class="accueil"><a href="sco_home.php">Accueil</a></li> 
-                <li class="recherche"><a href="recherche.php">Recherche</a></li>
-                <li class="notes"><a href="note.php">Notes</a></li>
-                <li class="filiere"><a href="filiere.php">Filière</a></li>
+                <li class="accueil"><a href="dir_home.php">Accueil</a></li> 
+                <li class="filiere"><a href="dir_filieres.php">Filière</a></li>
             </ul>
             <div class="logo">
                 <img src = "images/logo.jpeg"x>
@@ -29,7 +27,7 @@
     </div>
     <div class="header_block" id="header_block">
         <p class="header_text">Welcome to your Dashboard</p>
-        <div class="log_btn"><button type="submit" name="bouton" formaction="../index.php">log out</button></div>
+        <div class="log_btn"><form method="post" action="../inndex.php"><button type="submit" name="bouton" formaction="../index.php">log out</button></form></div>
     </div>
     <div class="center_block" id="center_block">
         <p>just to see all</p>

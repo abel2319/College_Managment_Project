@@ -92,9 +92,9 @@ class Etudiant
     }
     public function getIdFiliere(){
         $con = new Connect();
-        $con = $con->connector();
-        $sql = "SELECT * FROM Filiere WHERE id =".$this->_id_Filiere;
-        $result = mysqli_query($con, $sql);
+        $conn = $con->connector();
+        $sql = "SELECT * FROM Filiere WHERE id =". $this->_id_Filiere;
+        $result = mysqli_query($conn, $sql);
         $lim = mysqli_num_rows($result);
        
         $row = mysqli_fetch_assoc($result);
@@ -103,9 +103,13 @@ class Etudiant
         }else{ 
             return -1;
         }
+        mysqli_close($conn);
         
     }
     
+    public function setMatricule($m){
+        $this->_matricule = $m;
+    }
 
     public function lastMatricule(){
         $con = new Connect();
@@ -126,7 +130,6 @@ class Etudiant
           return $mat[mysqli_num_rows($result)-1];
         mysqli_close($con);
     }
-
 
     public function inscritEtudiant(){
         $con = new Connect();
@@ -157,19 +160,147 @@ class Etudiant
         
     }
 
+
+
+    public function modifierEtudiant(){
+        $con = new Connect();
+        $conn = $con->connector();
+
+        $sql = "UPDATE  Etudiant SET   
+        nom = '$this->_nom',
+        prenom = '$this->_prenom',
+        date_naissance = '$this->_date_naissance',
+        lieu_naissance ='$this->_lieu_naissance',
+        nationalite ='$this->_nationalite',
+        email =  '$this->_email',
+        genre = '$this->_genre ',
+        contact = '$this->_contact',
+        adresse = '$this->_adresse', 
+        photo = '$this->_photo' WHERE matricule =". $this->_matricule; 
+        
+        if (mysqli_query($conn, $sql)) {
+            echo "Modification Succès";
+          } else
+          {
+              echo "Erreur d'enregistrement";
+          }
+        
+       
+          mysqli_close($conn);
+        
+    }
+
+
+    public function deleteEtudiant(){
+        $con = new Connect();
+        $conn = $con->connector();
+        $sql = "Delete FROM Etudiant where matricule = ".$this->_matricule;
+
+        if(mysqli_query($conn, $sql))
+        {
+            echo "Etudiant supprimée avec succès";
+        }
+        
+        else
+        {
+            echo "Erreur lors de la suppression, veillez réessayer";
+        }
+    }
+
 }
+
+function note_for_matricule($matricule){
+
+    $con = new Connect();
+    $con = $con->connector();
+    $tab = array();
+    $sql_1 ="SELECT * FROM EtudiantHasNoteInMatiere  WHERE id_Etudiant = $matricule";
+    $resultt = mysqli_query($con, $sql_1);
+    $lim_1 = mysqli_num_rows($resultt);
+    if($lim_1 !=0){
+    for($j = 0; $j < $lim_1;  $j++)
+            {
+                 $row_1 = mysqli_fetch_assoc($resultt);
+                 $id = $row_1['id_Matiere'];
+                $tab[0] = $row_1['note'];
+                $tab[1] = $row_1['note_ratrappage'];
+                 
+                 $sql_2 ="SELECT * FROM Matiere  WHERE id= $id";
+                 $resulttt = mysqli_query($con, $sql_2);
+                 $row_2 = mysqli_fetch_assoc($resulttt);
+                 $tab[2] = $matiere = $row_2['nom'];
+                 
+                 
+                
+            } 
+
+        }else{
+            $tab[0] = 0;
+            $tab[1] = 0;
+            $tab[2] = 'null';
+
+        }
+            return $tab;
+}
+
+function select_firstname_lastname(){
+    $con = new Connect();
+    $con = $con->connector();
+        $sql = "SELECT * FROM Etudiant";
+        $result = mysqli_query($con, $sql);
+        $lim = mysqli_num_rows($result);
+
+        $tab = array();
+        $k  = 0;
+        $obj = array();
+        for($i = 0; $i < $lim;  $i++)
+        {
+            $row = mysqli_fetch_assoc($result);
+            
+            $matricule = $row['matricule'];
+	        $nom = $row['nom'];
+            $prenom = $row['prenom'];
+            $date_naissance = $row['date_naissance'];
+            $lieu_naissance = $row['lieu_naissance'];
+            $nationalite = $row['nationalite'];
+            $email = $row['email'];
+            $genre = $row['genre'];
+            $contact = $row['contact'];
+            $adresse = $row['adresse'];
+            $photo = $row['photo'];
+            $id_Filiere = $row['id_Filiere'];
+            $plus = note_for_matricule($matricule);
+            $obj[0] = $matricule;
+            $obj[1] = $nom;
+            $obj[2] = $prenom;
+            $obj[3] = $plus[2];
+            $obj[4] = $plus[1];
+            $obj[5] = $plus[0];
+
+            $tab[$k] = $obj; 
+            $k ++;    
+        }
+        mysqli_close($con);
+        return $tab;
+    
+ }
+
+
+
+    
 
 function search($matricule, $nom, $prenom){
     $con = new Connect();
     $conn = $con->connector();
 
-    $sql = "SELECT * FROM Etudiant WHERE matricule =". $matricule;
+    $sql = "SELECT * FROM Etudiant WHERE matricule =". $matricule ;
     $result = mysqli_query($conn, $sql);
-    
     $lim = mysqli_num_rows($result);
+   
+    if(($lim != 0)){
     $row = mysqli_fetch_assoc($result);
-    if(($lim != 0) AND ($row['nom']==$nom) AND ($row['prenom']==$prenom) ){
-
+    $nom = $row['nom'];
+    $prenom = $row['prenom'];
     $dateNaiss = $row['date_naissance'];
     $LieuNaiss = $row['lieu_naissance'];
     $nationalite= $row['nationalite'];
@@ -179,23 +310,29 @@ function search($matricule, $nom, $prenom){
     $contact = $row['contact'];
     $photo= $row['photo'];
     $idFiliere= $row['id_Filiere'];
-    }else{
-        $dateNaiss = "none";
-        $LieuNaiss = "none";
-        $nationalite= "none";
-        $email= "none";
-        $genre= "none";
-        $adresse= "none";
-        $contact = "none";
-        $photo= "none";
-        $idFiliere= "none";
-    }
-
     $obj = new Etudiant($nom, $prenom, $dateNaiss, $LieuNaiss, $nationalite, $email, $genre, $contact,
     $adresse, $photo, $idFiliere);
-    
+    }else{
+            $nom = 'none';
+            $prenom = 'none';
+            $dateNaiss = 'none';
+            $LieuNaiss = 'none';
+            $nationalite= 'none';
+            $email= 'none';
+            $genre= 'none';
+            $adresse= 'none';
+            $contact = 'none';
+            $photo= 'none';
+            $idFiliere= -1;
+    $obj = new Etudiant($nom, $prenom, $dateNaiss, $LieuNaiss, $nationalite, $email, $genre, $contact,
+    $adresse, $photo, $idFiliere);
+    }
+
         mysqli_close($conn);
+
         return $obj;
 }
+
+
 
 ?>

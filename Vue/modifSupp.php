@@ -6,7 +6,7 @@
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
-<link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/modSupp_1.css"/>
+<link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/modSupp.css"/>
 
 <link href="../Styles/Modules/Bootstrap/css/bootstrap.min.css"  rel="stylesheet"/>
 
@@ -17,7 +17,8 @@
         session_start();
     ?>
 
-        <div class="center_block" id="center_block">
+<div class="center_block" id="center_block">
+        <form action="../Controlleur/ModifSupp/modif1.php" method="post">
             <div class="row">
                 <div class="col">
                                 <label for="firstname" class="label_firstname"
@@ -27,7 +28,7 @@
                               type="text"
                               class="form-control"
                               id="firstname"
-                              value= "<?php echo $_SESSION["nom"] ?>"
+                              value= "<?php echo$_SESSION["nom"] ?>"
                               name="firstname"
                               width="50px"
                             /><br /><br />
@@ -68,7 +69,7 @@
                     </div> 
                 <div class="col">
         
-                        <form action="../../Controlleur/Inscription/inscription2.php" method="post">
+                        
                         <label for="datebirth" class="label_datebirth"
                           ><em>Date de Naissance :</em>
                         </label>
@@ -104,7 +105,7 @@
                         />
                 </div>
                 <div class="col">
-                          <form action="../../Controlleur/Inscription/inscription3.php" method="post">
+                          
                             <label for="course_of_study" class="label_course_of_study"
                               ><em>Filière :</em>
                             </label>
@@ -160,9 +161,10 @@
              </div>
             </div>
             <div class="all_button">
-             <a role="button" class="btn btn-outline-secondary button_edit" width="100px" href="#"><img src = "../Vue/images/modifier.png" class=""></a>
-             <a role="button" class="btn btn-outline-secondary" width="100px" href="#"><img src = "../Vue/images/delete.png" class="button_delete"></a>
-            </div>    
+             <button value="submit" name = "btn1" class="btn btn-outline-secondary button_edit" width="100px"><img src = "../Vue/images/modifier.png" class=""></button>
+             <button value="submit"  name = "btn2"class="btn btn-outline-secondary" width="100px" ><img src = "../Vue/images/delete.png" class="button_delete"></button>
+            </div> 
+</form>   
         </div>
 </body>
 </html>

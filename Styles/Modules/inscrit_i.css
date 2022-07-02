@@ -1,6 +1,7 @@
-.liens_gauche .insciption{
+.liens_gauche .inscription{
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
+  width: 95%;
   font-size: 1.3em;
   font-weight: bold;
 }
@@ -105,7 +106,7 @@
   text-align: center;
 }
 .inscript_1 {
-  margin-top: 75px;
+  margin-top: 45px;
   padding-bottom: 15px;
 }
 .inscript_2 {

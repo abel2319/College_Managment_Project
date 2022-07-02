@@ -30,7 +30,7 @@ if($conn AND isset($_POST['user_name']) AND isset($_POST['user_pwd'])){
     if($row['statut'] == 'Directeur')
       $url = '../Vue/dir_home.php';
     elseif($row['statut'] == 'Administrateur')
-      $url = '../Vue/admin_filieres.php';
+      $url = '../Vue/admin.php';
     elseif($row['statut'] == 'Chef Scolarite')
       $url = '../Vue/sco_home.php';
     else

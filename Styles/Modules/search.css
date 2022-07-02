@@ -1,3 +1,11 @@
+.liens_gauche .inscription{
+  color: white;
+  border-bottom: 3px solid white;
+  width: 95%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .centre {
   text-align: center;
   margin-top: 90px;
@@ -9,6 +17,7 @@
   padding-bottom: 25px;
   padding-left: 40px;
   padding-right: 40px;
+  border-radius: 2px;
   font-size: 22px;
 }
 .id_input {
@@ -23,6 +32,7 @@
   padding-bottom: 25px;
   padding-left: 60px;
   padding-right: 60px;
+  border-radius: 2px;
   font-size: 22px;
 }
 .firstname_input {
@@ -37,6 +47,7 @@
   padding-bottom: 25px;
   padding-left: 50px;
   padding-right: 50px;
+  border-radius: 2px;
   font-size: 22px;
 }
 .lastname_input {

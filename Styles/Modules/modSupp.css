@@ -1,3 +1,11 @@
+.liens_gauche .inscription{
+  color: white;
+  border-bottom: 3px solid white;
+  width: 95%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .label_firstname,
 .label_datebirth,
 .label_course_of_study {
