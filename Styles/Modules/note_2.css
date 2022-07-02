@@ -31,7 +31,6 @@
 .table_inf tr:nth-child(odd) {
   background-color: #d8dee6;
 }
-
 .table_col {
   padding: 2%;
   width: 1%;

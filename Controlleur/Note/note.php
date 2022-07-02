@@ -6,7 +6,15 @@ $table = select_firstname_lastname();
 
 echo ' 
 <div class="all_table">
-        <table class="table_inf">';
+        <table class="table_inf">
+            <tr class="table_line"> 
+                <th class="table_col">Nom</th>
+                <th class="table_col">Prenom</th>
+                <th class="table_col">Matiere</th>
+                <th class="table_col">Note Session Normale</th>
+                <th class="table_col">Note Session Rattrappage </td>
+	       </tr>';
+
 
 $i = 0;
 
@@ -24,10 +32,11 @@ for ($i = 0; $i < count($table) ; $i++ )
                     <td class="table_col"><input type="image" src="../Vue/images/mod.jpg" class="img_a" /></td>   
         </form>
 	</tr>
-     </div>';
+     ';
     
 }
 echo '
-	</table>';
+	</table>
+    </div>';
 
 ?>
