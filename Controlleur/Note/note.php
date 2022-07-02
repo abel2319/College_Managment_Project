@@ -1,9 +1,10 @@
 <?php
-include_once('../Modele/Etudiant.php');
 
-$table = select_firstname_lastname();
+include('../Modele/Etudiant.php');
+$nomMatiere = $_POST['nom'];
+$idMatiere = nom_to_mat($nomMatiere);
 
-
+$table = select_firstname_lastname($_SESSION["fi"]);
 echo ' 
 <div class="all_table">
         <table class="table_inf">';
@@ -19,7 +20,7 @@ for ($i = 0; $i < count($table) ; $i++ )
             
                     <td class="table_col"><span>' .$table[$i][1].' </span></td>
                     <td class="table_col"><span>' .$table[$i][2].'</span></td>
-                    <td class="table_col"><span>' .$table[$i][3].'</span></td>
+                    <td class="table_col"><span>' .$table[$i][2].'</span></td>
                     <td class="table_col"><input class="entree" type="text" name="note_1" value="'.$table[$i][4].'" /></td>
                     <td class="table_col"><input class="entree" type="text" name="note_2" value="'.$table[$i][5].'" /></td>
                     <td class="table_col"><input type="image" src="../Vue/images/mod.jpg" class="img_a" /></td>   

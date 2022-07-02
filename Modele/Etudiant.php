@@ -208,13 +208,28 @@ class Etudiant
     }
 
 }
+function nom_to_mat($nom){
+    $con = new Connect();
+    $con = $con->connector();
 
-function note_for_matricule($matricule){
+    $sql = "SELECT * FROM Matiere  WHERE nom = '$nom' ";
+    $result = mysqli_query($con, $sql);
+    if($result){
+        $row = mysqli_fetch_assoc($result);
+        return $row['id'];
+    }else{
+        return -1;
+    }
+    
+
+}
+
+function note_for_matricule($idMat){
 
     $con = new Connect();
     $con = $con->connector();
     $tab = array();
-    $sql_1 ="SELECT * FROM EtudiantHasNoteInMatiere  WHERE id_Etudiant = $matricule";
+    $sql_1 ="SELECT * FROM EtudiantHasNoteInMatiere  WHERE id_Matiere = $idMat";
     $resultt = mysqli_query($con, $sql_1);
     $lim_1 = mysqli_num_rows($resultt);
     if($lim_1 !=0){
@@ -224,26 +239,34 @@ function note_for_matricule($matricule){
                  $id = $row_1['id_Matiere'];
                 $tab[0] = $row_1['note'];
                 $tab[1] = $row_1['note_ratrappage'];
-                 
+
                  $sql_2 ="SELECT * FROM Matiere  WHERE id= $id";
                  $resulttt = mysqli_query($con, $sql_2);
                  $row_2 = mysqli_fetch_assoc($resulttt);
                  $tab[2] = $matiere = $row_2['nom'];      
+
             } 
 
         }else{
             $tab[0] = 0;
             $tab[1] = 0;
-            $tab[2] = 'null';
+           
 
         }
             return $tab;
 }
 
+
+function select_firstname_lastname($filiere){
+    $con = new Connect();
+    $con = $con->connector();
+        $sql = "SELECT * FROM Etudiant where id_Filiere= ".$filiere;
+
 function select_firstname_lastname(){
         $con = new Connect();
         $con = $con->connector();
         $sql = "SELECT * FROM Etudiant";
+
         $result = mysqli_query($con, $sql);
         $lim = mysqli_num_rows($result);
 
@@ -270,7 +293,7 @@ function select_firstname_lastname(){
             $obj[0] = $matricule;
             $obj[1] = $nom;
             $obj[2] = $prenom;
-            $obj[3] = $plus[2];
+            
             $obj[4] = $plus[1];
             $obj[5] = $plus[0];
 
