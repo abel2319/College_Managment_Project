@@ -1,6 +1,7 @@
 .liens_gauche .accueil{
     color: white;
     border-bottom: 2px solid white;
+    width: 95%;
     font-size: 1.3em;
     font-weight: bold;
 }  
@@ -17,10 +18,10 @@
 }
 
 .tab{
-    box-shadow:0.5px 25px rgba(0,0,0,0.15);
-    border:1px solid black;
-    height: 100%;
-    width: 20%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    /*border:1px solid black;*/
+    height: 95%;
+    width: 18%;
     margin-top: 1%;
     margin-right: 6%;
     margin-left: 6%;
@@ -28,6 +29,12 @@
     border-radius: 15px;
     text-align: center;
     text-align:bottom;
+    transition-duration: 0.3s;
+}
+
+.tab:hover{
+    width: 20%;
+    height: 100%;
 }
 
 .container{
