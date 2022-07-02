@@ -6,7 +6,7 @@
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
- <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/sco_filieres_1.css"/>
+ <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/note.css"/>
 <link href="../Styles/Modules/Bootstrap/css/bootstrap.min.css"  rel="stylesheet"/>
 </head>
 <body>
@@ -15,7 +15,17 @@
     ?>
     <div class="center_block" id="center_block">
      <h1 class="aah">Informations sur les filières</h1>
-     <div class="all_page">
+    
+    <div class="all_page">
+        <table>
+            <tr class="table_line"> 
+                <th class="table_col">Nom</th>
+                <th class="table_col">Prenom</th>
+                <th class="table_col">Matiere</th>
+                <th class="table_col">Note Session Normale</th>
+                <th class="table_col">Note Session Rattrappage </td>
+	       </tr>';
+        </table>
     <?php
         include_once('../Controlleur/Note/note.php');
     ?>  
