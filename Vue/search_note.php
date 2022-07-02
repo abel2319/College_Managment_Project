@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
-                    <form   method="post"><!--action ="../Controlleur/Note/note.php"-->
+                    <form  action ="../Controlleur/Note/note1.php" method="post">
                     <label for="course_of_study" class="course_of_study_label">
                               <em>Filière :</em>
                             </label><br><br>
@@ -41,7 +41,8 @@
                               ></option>
                             </datalist>
                             <br>
-                        <a role="button" class="btn btn-outline-secondary" href= "../Vue/note.php">Rechercher</a>
+                            <button type="submit" name = "btn" class="btn btn-outline-secondary">Rechercher</button>
+                        <!--<a role="button"  href= "../Vue/note.php">Rechercher</a>-->
                     </form>
                 </div>
                 <div class="col"></div>          

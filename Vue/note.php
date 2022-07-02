@@ -11,7 +11,8 @@
 </head>
 <body>
     <?php
-        include_once('panel.php')
+        include_once('panel.php');
+        session_start();
     ?>
     <div class="center_block" id="center_block">
         <h1 class="aah">Informations sur les filières</h1>
@@ -23,7 +24,7 @@
                     <th class="table_col">Matiere</th>
                     <th class="table_col">Session Normale</th>
                     <th class="table_col">Session Rattrappage </td>
-	            </tr>;
+	            </tr>
             </table>
         </div>
     <div class="all_page">

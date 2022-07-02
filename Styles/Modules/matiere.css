@@ -1,0 +1,36 @@
+.liens_gauche .notes{
+    color: white;
+    border-bottom: 3px solid white;
+    width: 95%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.aah{
+    margin-bottom: 2%;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.table_inf{
+    border-collapse: collapse;
+    margin-left: 1%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.table_inf tr:nth-child(even){
+    background-color: cyan;
+}
+.table_inf tr:nth-child(odd){
+    background-color: lightcyan;
+}
+
+.table_line{
+}
+
+.table_col{
+    padding: 2%;
+    width: 1%;
+}

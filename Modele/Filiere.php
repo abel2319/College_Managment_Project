@@ -1,4 +1,5 @@
 <?php
+include_once("Connection.php");
 class Filiere
 {
     private $_id;
@@ -164,4 +165,35 @@ function func1liste()
         return $tab;
     }
 }
+
+function filiere_UE($f){
+    $con = new Connect();
+    $con = $con->connector();
+    $sql = "SELECT * FROM UE where id_Filiere = ". $f;
+    $result = mysqli_query($con, $sql);
+    $lim = mysqli_num_rows($result);
+        $tab = array();
+        $k = 0;
+        for($i = 0; $i < $lim;  $i++)
+        {
+            $row = mysqli_fetch_assoc($result);
+            $id_ue = $row['id'];
+
+            $sql_1 = "SELECT * FROM Matiere where id_UE = ".$id_ue;
+            $result1 = mysqli_query($con, $sql_1);
+            $lim1 = mysqli_num_rows($result1);
+            for($j = 0; $j < $lim1;  $j++)
+            {
+                $row1 = mysqli_fetch_assoc($result1);
+                $nom = $row1['nom'];
+                $tab[$k] = $nom;
+                $k++; 
+            }
+
+               
+        }
+
+        return $tab;
+}
+
 ?>
