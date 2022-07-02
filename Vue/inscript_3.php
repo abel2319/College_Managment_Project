@@ -43,22 +43,9 @@
                             <label for="course_of_study" class="label_course_of_study"
                               ><em>Filière :</em>
                             </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              list="course_study"
-                              id="course_of_study"
-                              placeholder="TIC"
-                              name="course_of_study"
-                              required
-                            /><br />
-                            <datalist id="course_study">
-                              <option value="Data Science"></option>
-                              <option value="Genie logicel"></option>
-                              <option
-                                value="Base de données et intelligence artificielle"
-                              ></option>
-                            </datalist>
+                            <?php 
+                                include_once('../Controlleur/list_filiere.php');
+                            ?>
                              </div>
                 <div class="col"></div>
               </div> 
