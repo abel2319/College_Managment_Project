@@ -25,21 +25,9 @@
                     <label for="course_of_study" class="course_of_study_label">
                               <em>Filière :</em>
                             </label><br><br>
-                            <input
-                              type="text"
-                              class="form-control"
-                              list="course_study"
-                              id="course_of_study_label"
-                              name="course_of_study_label"
-                              required
-                            /><br />
-                            <datalist nom = "course_of_study" id="course_study">
-                              <option value="Data Science"></option>
-                              <option value="Genie logiciel"></option>
-                              <option
-                                value="Base de données et intelligence artificielle"
-                              ></option>
-                            </datalist>
+                            <?php 
+                                include_once('../Controlleur/list_filiere.php');
+                            ?>
                             <br>
                         <a role="button" class="btn btn-outline-secondary" href= "../Vue/note.php">Rechercher</a>
                     </form>

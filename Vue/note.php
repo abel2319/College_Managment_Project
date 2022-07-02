@@ -6,7 +6,7 @@
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/reset.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Bases/base.css"/>
 <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/panel.css"/>
- <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/note_2.css"/>
+ <link rel = "stylesheet" type= "text/css" href = "../Styles/Modules/note.css"/>
 <link href="../Styles/Modules/Bootstrap/css/bootstrap.min.css"  rel="stylesheet"/>
 </head>
 <body>

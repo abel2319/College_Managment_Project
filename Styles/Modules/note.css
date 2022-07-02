@@ -1,4 +1,4 @@
-.liens_gauche .notes{
+.liens_gauche .notes {
   color: white;
   border-bottom: 3px solid white;
   width: 95%;
@@ -26,6 +26,7 @@
 .all_table {
   overflow: scroll;
   height: 60vh;
+  margin-top: 5px;
 }
 .table_line {
   margin-left: 5%;
