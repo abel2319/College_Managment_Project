@@ -1,6 +1,6 @@
 <?php
 session_start();
- $filiere = $_POST["course_of_study_label"];
+ $filiere = $_POST["course_of_study"];
  $submit = $_POST["btn"];
  $URL = '../../Vue/matiere_filiere.php';
 
