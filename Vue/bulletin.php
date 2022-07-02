@@ -20,7 +20,7 @@
             <ul class="liens_gauche"> 
                 <li class="accueil"><a href="sco_home.php">Accueil</a></li> 
                 <li class="inscription"><a href="inscrit.php">Inscription</a></li>
-                <li class="notes"><a href="note.php">Notes</a></li>
+                <li class="notes"><a href="search_note.php">Notes</a></li>
                 <li class="bulletin"><a href="bulletin.php">Bulletins</a></li>
                 <li class="filiere"><a href="filiere.php">Filière</a></li>
 </ul>

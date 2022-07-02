@@ -13,7 +13,7 @@
 </head>
 <body>
     <?php
-        include_once('panel.php')
+      include_once('panel.php')
     ?>
 
         <div class="center_block" id="center_block">

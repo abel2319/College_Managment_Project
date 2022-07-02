@@ -9,9 +9,9 @@
 .bulletinI{
     display: grid;
     grid-template-columns: 80% 10%;
-    height: 150px;
+    height: 81vh;
     padding-top: 15px;
-    overflow: scroll;
+    overflow: auto;
 }
 .bulletin_gauche{
     border: 1px black solid;
