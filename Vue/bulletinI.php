@@ -11,6 +11,10 @@
 
 </head>
 <body>
+<?php
+        session_start();
+ ?>
+
     <div class="block" id="block">
         <nav class = "menu">
             <div class="user">
@@ -58,11 +62,11 @@
                         <p><h1 id="head_bull">RELEVÉ DE NOTE<br/><br/><br/></h1></p>
                         <p>
                         
-                            <span class="infos_etu">Numéro matricule:</span> <input type=text id="mat_etu" name = "mat_etu"/><br/><br/>
-                            <span class="infos_etu">Nom:</span> <input type=text id="nom_etu" name = "nom_etu" readonly/><br/><br/>
-                            <span class="infos_etu">Prénom:</span> <input type=text id="prenom_etu" name = "prenom_etu" readonly/><br/><br/>
-                            <span class="infos_etu">Date de naissance:</span> <input type=text id="naiss_etu" name = "naiss_etu" readonly/><br/><br/>
-                            <span class="infos_etu">Filière:</span> <input type=text id="filiere_etu" name = "filiere_etu" readonly/><br/><br/><br/>
+                            <span class="infos_etu">Numéro matricule:</span> <input type=text id="mat_etu" name = "mat_etu" value= "<?php echo$_SESSION['m'] ?>" /><br/><br/>
+                            <span class="infos_etu">Nom:</span> <input type=text id="nom_etu" name = "nom_etu" value= "<?php echo$_SESSION['nom'] ?>" readonly/><br/><br/>
+                            <span class="infos_etu">Prénom:</span> <input type=text id="prenom_etu" name = "prenom_etu"  value= "<?php echo$_SESSION['prenom'] ?>" readonly/><br/><br/>
+                            <span class="infos_etu">Date de naissance:</span> <input type=text id="naiss_etu" name = "naiss_etu" value= "<?php echo$_SESSION['dateNaiss'] ?>" readonly/><br/><br/>
+                            <span class="infos_etu">Filière:</span> <input type=text id="filiere_etu" name = "filiere_etu" value= "<?php echo$_SESSION['idF'] ?>" readonly/><br/><br/><br/>
                         </p>
                         <table id="tabl_bull">
                             <tr id="head_tabl">
@@ -74,6 +78,24 @@
                                 <th>Observation</th>
                                 <th>Moyenne</th>
                             </tr>
+                            <!--<tr class="body_tabl">
+                                <td  rowspan="2">UE 1</td>
+                                <td>EC 1</td>
+                                <td>Note 1</td>
+                                <td>Validé</td>
+                                <td>Crédit 1</td>
+                                <td>Sessions</td>
+                                <td>Moyenne 1</td>
+                            </tr>
+                            <tr class="body_tabl">
+                                <td>EC 2</td>
+                                <td>Note 2</td>
+                                <td>Validé</td>
+                                <td>Crédit 2</td>
+                                <td>Sessions</td>
+                                <td>Moyenne 2</td>
+                            </tr>-->
+                            <?php include("../Controlleur/affichTablBul.php")?>
                         </table>
                         <br><br>
                     </div>
@@ -86,4 +108,3 @@
     </div>
   </body>
 </html>
-
