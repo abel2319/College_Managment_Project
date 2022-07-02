@@ -28,10 +28,9 @@
             </table>
         </div>
     <div class="all_page">
-        
-        <?php
-            include_once('../Controlleur/Note/note.php');
-        ?>  
+    <?php
+        include_once('../Controlleur/Note/note.php');
+    ?>  
     </div>
     </div>
 </body>

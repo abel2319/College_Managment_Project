@@ -9,6 +9,7 @@ echo '
 <div class="all_table">
         <table class="table_inf">';
 
+
 $i = 0;
 
 for ($i = 0; $i < count($table) ; $i++ )
@@ -24,11 +25,13 @@ for ($i = 0; $i < count($table) ; $i++ )
                     <td class="table_col"><input class="entree" type="text" name="note_2" value="'.$table[$i][5].'" /></td>
                     <td class="table_col"><input type="image" src="../Vue/images/mod.jpg" class="img_a" /></td>   
         </form>
+
 	</tr>
-     </div>';
+     ';
     
 }
 echo '
-	</table>';
+	</table>
+    </div>';
 
 ?>

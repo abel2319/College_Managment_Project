@@ -239,7 +239,12 @@ function note_for_matricule($idMat){
                  $id = $row_1['id_Matiere'];
                 $tab[0] = $row_1['note'];
                 $tab[1] = $row_1['note_ratrappage'];
-                 
+
+                 $sql_2 ="SELECT * FROM Matiere  WHERE id= $id";
+                 $resulttt = mysqli_query($con, $sql_2);
+                 $row_2 = mysqli_fetch_assoc($resulttt);
+                 $tab[2] = $matiere = $row_2['nom'];      
+
             } 
 
         }else{
@@ -251,10 +256,17 @@ function note_for_matricule($idMat){
             return $tab;
 }
 
+
 function select_firstname_lastname($filiere){
     $con = new Connect();
     $con = $con->connector();
         $sql = "SELECT * FROM Etudiant where id_Filiere= ".$filiere;
+
+function select_firstname_lastname(){
+        $con = new Connect();
+        $con = $con->connector();
+        $sql = "SELECT * FROM Etudiant";
+
         $result = mysqli_query($con, $sql);
         $lim = mysqli_num_rows($result);
 

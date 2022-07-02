@@ -136,6 +136,27 @@ class Filiere
 
 }
 
+function get_filiere(){
+       $con = new Connect();
+       $con = $con->connector();
+
+       $sql_filiere = "SELECT * from filiere";
+       $result_filiere = mysqli_query($con, $sql_filiere );
+       $limit_filiere = mysqli_num_rows($result_filiere);
+       $tab = array();
+       $obj = array();
+
+       for ($i = 0 ; $i < $limit_filiere ; $i++){
+            $row_filiere = mysqli_fetch_assoc($result_filiere);
+            $nom_filiere = $row_filiere['nom'];
+            $id_filiere = $row_filiere['id'];
+            $obj[1] = $nom_filiere; 
+            $obj[0] = $id_filiere;
+            $tab[$i] = $obj;
+       }
+      return $tab;
+}
+
 function func1liste()
 {
     $con = mysqli_connect("localhost", "root", "", "PROJET_WEB");
