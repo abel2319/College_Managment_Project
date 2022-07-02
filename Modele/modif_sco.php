@@ -16,7 +16,7 @@ if($conn AND isset($_POST['nom']) AND isset($_POST['resp']) AND isset($_POST['id
   mysqli_close($conn);
 }
 
-$url = '../Vue/sco_filieres.php';
+$url = '../Vue/scoFilieres.php';
 header('Location: '. $url);
 
 
